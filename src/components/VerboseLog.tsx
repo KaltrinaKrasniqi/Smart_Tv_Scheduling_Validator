@@ -7,48 +7,18 @@ interface VerboseLogProps {
   logs: string[];
 }
 
-export const VerboseLog = ({ logs }: VerboseLogProps) => {
-  const [isExpanded, setIsExpanded] = useState(false);
-
+export const VerboseLog = ({ logs }: { logs: string[] }) => {
   return (
     <Card className="p-6">
-      <div className="flex items-center justify-between mb-4">
-        <div className="flex items-center gap-2">
-          <Terminal className="h-5 w-5 text-muted-foreground" />
-          <h3 className="text-lg font-semibold">Verbose Log</h3>
-          <span className="text-sm text-muted-foreground">({logs.length} entries)</span>
-        </div>
-        <Button
-          variant="ghost"
-          size="sm"
-          onClick={() => setIsExpanded(!isExpanded)}
-        >
-          {isExpanded ? (
-            <>
-              <ChevronUp className="h-4 w-4 mr-1" />
-              Collapse
-            </>
-          ) : (
-            <>
-              <ChevronDown className="h-4 w-4 mr-1" />
-              Expand
-            </>
-          )}
-        </Button>
-      </div>
-
-      {isExpanded && (
-        <div className="bg-muted/30 rounded-lg p-4 max-h-96 overflow-y-auto">
-          <pre className="text-xs font-mono text-foreground whitespace-pre-wrap">
-            {logs.map((log, index) => (
-              <div key={index} className="py-1 border-b border-border/50 last:border-0">
-                <span className="text-muted-foreground mr-3">{index + 1}.</span>
-                {log}
-              </div>
-            ))}
-          </pre>
-        </div>
-      )}
+      <h3 className="text-xl font-semibold mb-4">Verbose Log ({logs.length} entries)</h3>
+      <ol className="space-y-1 font-mono text-sm">
+        {logs.map((line, i) => (
+          <li key={i} className="text-muted-foreground">
+            <span className="mr-2 text-foreground">{i + 1}.</span>
+            {line}
+          </li>
+        ))}
+      </ol>
     </Card>
   );
 };

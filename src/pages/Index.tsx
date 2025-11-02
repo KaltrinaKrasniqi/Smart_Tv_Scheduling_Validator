@@ -3,92 +3,31 @@ import { Header } from "@/components/Header";
 import { FileUpload } from "@/components/FileUpload";
 import { ValidationResults, ValidationResult } from "@/components/ValidationResults";
 import { toast } from "sonner";
+import { validateWithWasm } from "@/wasm/validator";
+
 
 const Index = () => {
   const [validationResult, setValidationResult] = useState<ValidationResult | null>(null);
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleValidate = async (
-    instanceFile: File,
-    submissionFile: File,
-    verbose: boolean
-  ) => {
-    setIsLoading(true);
-    
-    try {
-      // Read file contents
-      const instanceText = await instanceFile.text();
-      const submissionText = await submissionFile.text();
-      
-      // Parse JSON to validate
-      const instanceData = JSON.parse(instanceText);
-      const submissionData = JSON.parse(submissionText);
+const handleValidate = async (instanceFile: File, submissionFile: File, verbose: boolean) => {
+  setIsLoading(true);
+  try {
+    const [instanceText, submissionText] = await Promise.all([
+      instanceFile.text(),
+      submissionFile.text(),
+    ]);
 
-      // Create FormData for backend
-      const formData = new FormData();
-      formData.append("instance", instanceFile);
-      formData.append("submission", submissionFile);
-      formData.append("verbose", verbose.toString());
-
-      // TODO: Replace with actual backend endpoint
-      // const response = await fetch("/api/validate", {
-      //   method: "POST",
-      //   body: formData,
-      // });
-      // const result = await response.json();
-
-      // Mock response for demonstration
-      await new Promise((resolve) => setTimeout(resolve, 1500));
-      
-      const mockResult: ValidationResult = {
-        status: "VALID",
-        score: {
-          total: 380,
-          base: 300,
-          bonuses: 90,
-          switches: { count: 2, S: 5, total: -10 },
-          early_late: { early: 0, late: 0, T: 10, total: 0 },
-        },
-        violations: [],
-        verbose: verbose ? [
-          "Loading instance file...",
-          "Validating channel availability...",
-          "Processing program schedules...",
-          "Bonus activated for program n1: +30 points",
-          "Bonus activated for program n3: +60 points",
-          "Channel switch detected @ 840: Ch0 → Ch1 (-5 points)",
-          "Channel switch detected @ 1020: Ch1 → Ch0 (-5 points)",
-          "No early/late penalties detected",
-          "All priority blocks satisfied",
-          "Validation complete: VALID",
-        ] : undefined,
-        timeline: [
-          { program_id: "n1", channel_id: 0, genre: "News", start: 540, end: 600 },
-          { program_id: "s1", channel_id: 0, genre: "Sports", start: 600, end: 720 },
-          { program_id: "m1", channel_id: 1, genre: "Music", start: 840, end: 900 },
-          { program_id: "d1", channel_id: 1, genre: "Documentary", start: 900, end: 1020 },
-          { program_id: "mov1", channel_id: 0, genre: "Movies", start: 1020, end: 1200 },
-        ],
-        validator_version: "1.0.0",
-        elapsed_ms: 42,
-      };
-
-      setValidationResult(mockResult);
-      toast.success("Validation complete!");
-    } catch (error) {
-      console.error("Validation error:", error);
-      const errorResult: ValidationResult = {
-        status: "ERROR",
-        error_message: error instanceof Error ? error.message : "Failed to validate files",
-        validator_version: "1.0.0",
-        elapsed_ms: 0,
-      };
-      setValidationResult(errorResult);
-      toast.error("Validation failed");
-    } finally {
-      setIsLoading(false);
-    }
-  };
+    const result = await validateWithWasm(instanceText, submissionText, verbose);
+    setValidationResult(result);
+    toast.success("Validation complete!");
+  } catch (e: any) {
+    setValidationResult({ status: "ERROR", error_message: e?.message ?? "WASM error" } as any);
+    toast.error("Validation failed");
+  } finally {
+    setIsLoading(false);
+  }
+};
 
   const handleLoadSample = async () => {
     setIsLoading(true);

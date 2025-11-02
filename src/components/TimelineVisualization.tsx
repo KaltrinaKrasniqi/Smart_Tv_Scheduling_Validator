@@ -47,7 +47,7 @@ export const TimelineVisualization = ({ timeline }: TimelineVisualizationProps) 
   return (
     <Card className="p-6">
       <div className="flex items-center justify-between mb-4">
-        <h3 className="text-lg font-semibold">Timeline Visualization</h3>
+        <h3 className="text-lg font-semibold">Timeline Visualization of the output file</h3>
         <Button
           variant="ghost"
           size="sm"

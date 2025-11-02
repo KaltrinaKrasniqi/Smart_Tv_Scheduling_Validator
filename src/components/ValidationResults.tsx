@@ -31,6 +31,7 @@ export interface ValidationResult {
     channel?: number;
   }>;
   verbose?: string[];
+  debug?: string[];
   timeline?: Array<{
     program_id: string;
     channel_id: number;
@@ -83,6 +84,9 @@ export const ValidationResults = ({ result }: ValidationResultsProps) => {
 
   const statusConfig = getStatusConfig(result.status);
   const StatusIcon = statusConfig.icon;
+  const logs = result.verbose ?? result.debug ?? [];
+{logs.length > 0 && <VerboseLog logs={logs} />}
+
 
   return (
     <div className="space-y-6 animate-in fade-in slide-in-from-bottom-4 duration-500">
