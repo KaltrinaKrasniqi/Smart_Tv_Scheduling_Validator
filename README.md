@@ -53,7 +53,7 @@ To run the project locally, follow these steps:
    ```bash
    source ~/emsdk/emsdk_env.sh
 3. Clone the repository
-   git clone https://github.com/your-username/smart-tv-scheduling-validator.git
+   git clone https://github.com/KaltrinaKrasniqi/Smart_Tv_Scheduling_Validator.git
    cd smart-tv-scheduling-validator
 4. Install dependencies
    npm install
@@ -62,4 +62,5 @@ To run the project locally, follow these steps:
    ./build.sh
 6. Start the local development server
    npm run dev
+
 
