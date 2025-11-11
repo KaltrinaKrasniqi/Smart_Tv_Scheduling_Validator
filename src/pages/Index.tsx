@@ -104,11 +104,17 @@ const handleValidate = async (instanceFile: File, submissionFile: File, verbose:
         </div>
       </main>
 
-      <footer className="border-t py-6 px-4 mt-12">
-        <div className="container mx-auto max-w-7xl text-center text-sm text-muted-foreground">
-          © 2025 Smart TV Validator | Built with C++ & TypeScript
-        </div>
-      </footer>
+<footer className="border-t py-6 px-4 mt-12">
+  <div className="container mx-auto max-w-7xl text-center text-sm text-muted-foreground">
+    © 2025 Smart TV Scheduling Validator <br />
+    Author: Kaltrina Krasniqi | This validator is a work for a diploma thesis. <br />
+    For data instances, please refer to this link: 
+    <a href="https://github.com/fisnikhz/AA_25-26/tree/main/data" target="_blank" rel="noopener noreferrer">
+      GitHub - Data Instances
+    </a>
+  </div>
+</footer>
+
     </div>
   );
 };
