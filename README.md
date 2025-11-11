@@ -58,6 +58,8 @@ To run the project locally, follow these steps:
 4. Install dependencies
    npm install
 5. Build the C++ code with Emscripten
-   cd wasm/build.sh
+   cd wasm
+   ./build.sh
 6. Start the local development server
    npm run dev
+
