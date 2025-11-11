@@ -54,6 +54,15 @@ struct Submission {
   std::vector<SubmissionItem> items;
 };
 
+struct ProgramStats {
+  int full_length = 0;
+  bool has_long_segment = false;
+  bool has_full_short = false;
+  bool reached_end = false;
+  std::string genre;
+  std::vector<int> pref_overlap;
+};
+
 /**
  * @brief Parses an instance JSON text into an Instance.
  * @param json_text Raw JSON string.

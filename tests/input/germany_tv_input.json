@@ -1,0 +1,452 @@
+{
+  "opening_time": 480,
+  "closing_time": 1380,
+  "min_duration": 30,
+  "max_consecutive_genre": 2,
+  "channels_count": 5,
+  "switch_penalty": 10,
+  "termination_penalty": 20,
+  "priority_blocks": [
+    {
+      "start": 720,
+      "end": 780,
+      "allowed_channels": [
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "start": 1215,
+      "end": 1380,
+      "allowed_channels": [
+        0,
+        1,
+        3
+      ]
+    }
+  ],
+  "time_preferences": [
+    {
+      "start": 480,
+      "end": 660,
+      "preferred_genre": "news",
+      "bonus": 30
+    },
+    {
+      "start": 660,
+      "end": 780,
+      "preferred_genre": "talk",
+      "bonus": 20
+    },
+    {
+      "start": 780,
+      "end": 1080,
+      "preferred_genre": "entertainment",
+      "bonus": 25
+    },
+    {
+      "start": 1080,
+      "end": 1260,
+      "preferred_genre": "movie",
+      "bonus": 40
+    },
+    {
+      "start": 1260,
+      "end": 1380,
+      "preferred_genre": "music",
+      "bonus": 20
+    }
+  ],
+  "channels": [
+    {
+      "channel_id": 0,
+      "programs": [
+        {
+          "program_id": "ARD_news_mo",
+          "start": 480,
+          "end": 540,
+          "genre": "news",
+          "score": 80
+        },
+        {
+          "program_id": "ARD_morningmag",
+          "start": 540,
+          "end": 600,
+          "genre": "talk",
+          "score": 60
+        },
+        {
+          "program_id": "ARD_documentary",
+          "start": 600,
+          "end": 660,
+          "genre": "documentary",
+          "score": 70
+        },
+        {
+          "program_id": "ARD_lunch_news",
+          "start": 660,
+          "end": 720,
+          "genre": "news",
+          "score": 85
+        },
+        {
+          "program_id": "ARD_afternoonmag",
+          "start": 720,
+          "end": 780,
+          "genre": "entertainment",
+          "score": 65
+        },
+        {
+          "program_id": "ARD_kids_show",
+          "start": 780,
+          "end": 840,
+          "genre": "family",
+          "score": 50
+        },
+        {
+          "program_id": "ARD_prime_time",
+          "start": 840,
+          "end": 960,
+          "genre": "drama",
+          "score": 90
+        },
+        {
+          "program_id": "ARD_late_news",
+          "start": 960,
+          "end": 1020,
+          "genre": "news",
+          "score": 75
+        },
+        {
+          "program_id": "ARD_movie",
+          "start": 1020,
+          "end": 1260,
+          "genre": "movie",
+          "score": 95
+        },
+        {
+          "program_id": "ARD_late_show",
+          "start": 1260,
+          "end": 1320,
+          "genre": "talk",
+          "score": 65
+        },
+        {
+          "program_id": "ARD_night_music",
+          "start": 1320,
+          "end": 1380,
+          "genre": "music",
+          "score": 55
+        }
+      ]
+    },
+    {
+      "channel_id": 1,
+      "programs": [
+        {
+          "program_id": "ZDF_Heute",
+          "start": 480,
+          "end": 540,
+          "genre": "news",
+          "score": 78
+        },
+        {
+          "program_id": "ZDF_Morgenmagazin",
+          "start": 540,
+          "end": 600,
+          "genre": "talk",
+          "score": 62
+        },
+        {
+          "program_id": "ZDF_Wetter",
+          "start": 600,
+          "end": 610,
+          "genre": "weather",
+          "score": 30
+        },
+        {
+          "program_id": "ZDF_reporter",
+          "start": 610,
+          "end": 670,
+          "genre": "documentary",
+          "score": 72
+        },
+        {
+          "program_id": "ZDF_lunch_news",
+          "start": 670,
+          "end": 730,
+          "genre": "news",
+          "score": 82
+        },
+        {
+          "program_id": "ZDF_sportsmag",
+          "start": 730,
+          "end": 780,
+          "genre": "sports",
+          "score": 70
+        },
+        {
+          "program_id": "ZDF_prime_movie",
+          "start": 780,
+          "end": 900,
+          "genre": "movie",
+          "score": 88
+        },
+        {
+          "program_id": "ZDF_prime_news",
+          "start": 900,
+          "end": 930,
+          "genre": "news",
+          "score": 80
+        },
+        {
+          "program_id": "ZDF_ent",
+          "start": 930,
+          "end": 1020,
+          "genre": "entertainment",
+          "score": 85
+        },
+        {
+          "program_id": "ZDF_late_movie",
+          "start": 1020,
+          "end": 1240,
+          "genre": "movie",
+          "score": 90
+        },
+        {
+          "program_id": "ZDF_night_doc",
+          "start": 1240,
+          "end": 1380,
+          "genre": "documentary",
+          "score": 68
+        }
+      ]
+    },
+    {
+      "channel_id": 2,
+      "programs": [
+        {
+          "program_id": "RTL_GutenMorgen",
+          "start": 480,
+          "end": 540,
+          "genre": "talk",
+          "score": 55
+        },
+        {
+          "program_id": "RTL_Science",
+          "start": 540,
+          "end": 600,
+          "genre": "documentary",
+          "score": 60
+        },
+        {
+          "program_id": "RTL_RealityShow",
+          "start": 600,
+          "end": 660,
+          "genre": "entertainment",
+          "score": 65
+        },
+        {
+          "program_id": "RTL_LunchSoap",
+          "start": 660,
+          "end": 720,
+          "genre": "soap",
+          "score": 75
+        },
+        {
+          "program_id": "RTL_game_show",
+          "start": 720,
+          "end": 780,
+          "genre": "game_show",
+          "score": 80
+        },
+        {
+          "program_id": "RTL_evening_news",
+          "start": 780,
+          "end": 840,
+          "genre": "news",
+          "score": 70
+        },
+        {
+          "program_id": "RTL_prime_ent",
+          "start": 840,
+          "end": 960,
+          "genre": "entertainment",
+          "score": 85
+        },
+        {
+          "program_id": "RTL_movie1",
+          "start": 960,
+          "end": 1080,
+          "genre": "movie",
+          "score": 92
+        },
+        {
+          "program_id": "RTL_trailer",
+          "start": 1020,
+          "end": 1080,
+          "genre": "promo",
+          "score": 40
+        },
+        {
+          "program_id": "RTL_night_ent",
+          "start": 1080,
+          "end": 1380,
+          "genre": "entertainment",
+          "score": 60
+        }
+      ]
+    },
+    {
+      "channel_id": 3,
+      "programs": [
+        {
+          "program_id": "P7_SAT1Start",
+          "start": 480,
+          "end": 540,
+          "genre": "talk",
+          "score": 58
+        },
+        {
+          "program_id": "P7_detective",
+          "start": 540,
+          "end": 600,
+          "genre": "drama",
+          "score": 65
+        },
+        {
+          "program_id": "P7_comedy",
+          "start": 600,
+          "end": 660,
+          "genre": "entertainment",
+          "score": 70
+        },
+        {
+          "program_id": "P7_lunch_talk",
+          "start": 660,
+          "end": 720,
+          "genre": "talk",
+          "score": 60
+        },
+        {
+          "program_id": "P7_sports_highlight",
+          "start": 720,
+          "end": 780,
+          "genre": "sports",
+          "score": 75
+        },
+        {
+          "program_id": "P7_evening_show",
+          "start": 780,
+          "end": 900,
+          "genre": "entertainment",
+          "score": 82
+        },
+        {
+          "program_id": "P7_prime_movie",
+          "start": 900,
+          "end": 1080,
+          "genre": "movie",
+          "score": 93
+        },
+        {
+          "program_id": "P7_latenight_comedy",
+          "start": 1080,
+          "end": 1200,
+          "genre": "entertainment",
+          "score": 70
+        },
+        {
+          "program_id": "P7_music_playlist",
+          "start": 1200,
+          "end": 1320,
+          "genre": "music",
+          "score": 60
+        },
+        {
+          "program_id": "P7_midnight_news",
+          "start": 1320,
+          "end": 1380,
+          "genre": "news",
+          "score": 50
+        }
+      ]
+    },
+    {
+      "channel_id": 4,
+      "programs": [
+        {
+          "program_id": "WDR_LocalNews",
+          "start": 480,
+          "end": 540,
+          "genre": "news",
+          "score": 68
+        },
+        {
+          "program_id": "WDR_morningmag",
+          "start": 540,
+          "end": 600,
+          "genre": "talk",
+          "score": 58
+        },
+        {
+          "program_id": "WDR_doc",
+          "start": 600,
+          "end": 660,
+          "genre": "documentary",
+          "score": 65
+        },
+        {
+          "program_id": "WDR_culture",
+          "start": 660,
+          "end": 720,
+          "genre": "culture",
+          "score": 60
+        },
+        {
+          "program_id": "WDR_afternoon_news",
+          "start": 720,
+          "end": 780,
+          "genre": "news",
+          "score": 75
+        },
+        {
+          "program_id": "WDR_edu_show",
+          "start": 780,
+          "end": 840,
+          "genre": "educational",
+          "score": 65
+        },
+        {
+          "program_id": "WDR_cinema",
+          "start": 840,
+          "end": 960,
+          "genre": "movie",
+          "score": 88
+        },
+        {
+          "program_id": "WDR_music_1",
+          "start": 960,
+          "end": 1020,
+          "genre": "music",
+          "score": 60
+        },
+        {
+          "program_id": "WDR_late_doc",
+          "start": 1020,
+          "end": 1260,
+          "genre": "documentary",
+          "score": 70
+        },
+        {
+          "program_id": "WDR_night_music",
+          "start": 1260,
+          "end": 1380,
+          "genre": "music",
+          "score": 55
+        }
+      ]
+    }
+  ]
+}

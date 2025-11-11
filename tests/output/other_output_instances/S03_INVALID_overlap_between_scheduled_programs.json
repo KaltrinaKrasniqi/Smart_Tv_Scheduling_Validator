@@ -1,0 +1,16 @@
+{
+  "scheduled_programs": [
+    {
+      "program_id": "RTK1_4",
+      "channel_id": 0,
+      "start": 600,
+      "end": 690
+    },
+    {
+      "program_id": "KTV_3",
+      "channel_id": 2,
+      "start": 540,
+      "end": 630
+    }
+  ]
+}

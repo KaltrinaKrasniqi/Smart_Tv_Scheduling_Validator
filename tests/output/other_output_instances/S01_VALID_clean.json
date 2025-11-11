@@ -1,0 +1,52 @@
+{
+  "scheduled_programs": [
+    {
+      "program_id": "RTK1_1",
+      "channel_id": 0,
+      "start": 420,
+      "end": 480
+    },
+    {
+      "program_id": "KTV_3",
+      "channel_id": 2,
+      "start": 540,
+      "end": 630
+    },
+    {
+      "program_id": "KlanKosova_6",
+      "channel_id": 3,
+      "start": 720,
+      "end": 750
+    },
+    {
+      "program_id": "KlanKosova_7",
+      "channel_id": 3,
+      "start": 750,
+      "end": 840
+    },
+    {
+      "program_id": "RTK1_8",
+      "channel_id": 0,
+      "start": 990,
+      "end": 1080
+    },
+    {
+      "program_id": "RTK1_12",
+      "channel_id": 0,
+      "start": 1200,
+      "end": 1230
+    },
+    {
+      "program_id": "RTK1_13",
+      "channel_id": 0,
+      "start": 1230,
+      "end": 1320
+    },
+    {
+      "program_id": "RTK1_14",
+      "channel_id": 0,
+      "start": 1320,
+      "end": 1380
+    }
+  ]
+}

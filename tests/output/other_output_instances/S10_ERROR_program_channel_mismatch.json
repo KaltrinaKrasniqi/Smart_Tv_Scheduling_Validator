@@ -1,0 +1,10 @@
+{
+  "scheduled_programs": [
+    {
+      "program_id": "KTV_3",
+      "channel_id": 0,
+      "start": 540,
+      "end": 630
+    }
+  ]
+}

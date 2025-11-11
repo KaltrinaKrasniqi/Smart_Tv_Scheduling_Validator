@@ -1,0 +1,10 @@
+{
+  "scheduled_programs": [
+    {
+      "program_id": "NON_EXISTENT_123",
+      "channel_id": 0,
+      "start": 480,
+      "end": 600
+    }
+  ]
+}

@@ -1,0 +1,1367 @@
+{
+  "opening_time": 420,
+  "closing_time": 1380,
+  "min_duration": 30,
+  "max_consecutive_genre": 2,
+  "channels_count": 13,
+  "switch_penalty": 3,
+  "termination_penalty": 15,
+  "priority_blocks": [
+    {
+      "start": 720,
+      "end": 780,
+      "allowed_channels": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "start": 1200,
+      "end": 1380,
+      "allowed_channels": [
+        0,
+        3,
+        5,
+        6
+      ]
+    }
+  ],
+  "time_preferences": [
+    {
+      "start": 420,
+      "end": 600,
+      "preferred_genre": "news",
+      "bonus": 30
+    },
+    {
+      "start": 600,
+      "end": 780,
+      "preferred_genre": "talk",
+      "bonus": 20
+    },
+    {
+      "start": 780,
+      "end": 1020,
+      "preferred_genre": "drama",
+      "bonus": 25
+    },
+    {
+      "start": 1020,
+      "end": 1260,
+      "preferred_genre": "movie",
+      "bonus": 40
+    },
+    {
+      "start": 1260,
+      "end": 1380,
+      "preferred_genre": "music",
+      "bonus": 15
+    }
+  ],
+  "channels": [
+    {
+      "channel_id": 0,
+      "channel_name": "RTK1",
+      "programs": [
+        {
+          "program_id": "RTK1_1",
+          "start": 420,
+          "end": 480,
+          "genre": "news",
+          "score": 51
+        },
+        {
+          "program_id": "RTK1_2",
+          "start": 480,
+          "end": 540,
+          "genre": "news",
+          "score": 72
+        },
+        {
+          "program_id": "RTK1_3",
+          "start": 540,
+          "end": 600,
+          "genre": "kids",
+          "score": 98
+        },
+        {
+          "program_id": "RTK1_4",
+          "start": 600,
+          "end": 690,
+          "genre": "movie",
+          "score": 44
+        },
+        {
+          "program_id": "RTK1_5",
+          "start": 690,
+          "end": 780,
+          "genre": "music",
+          "score": 49
+        },
+        {
+          "program_id": "RTK1_6",
+          "start": 780,
+          "end": 900,
+          "genre": "talk",
+          "score": 78
+        },
+        {
+          "program_id": "RTK1_7",
+          "start": 900,
+          "end": 990,
+          "genre": "drama",
+          "score": 53
+        },
+        {
+          "program_id": "RTK1_8",
+          "start": 990,
+          "end": 1080,
+          "genre": "movie",
+          "score": 54
+        },
+        {
+          "program_id": "RTK1_9",
+          "start": 1080,
+          "end": 1140,
+          "genre": "drama",
+          "score": 68
+        },
+        {
+          "program_id": "RTK1_10",
+          "start": 1140,
+          "end": 1170,
+          "genre": "kids",
+          "score": 72
+        },
+        {
+          "program_id": "RTK1_11",
+          "start": 1170,
+          "end": 1200,
+          "genre": "news",
+          "score": 89
+        },
+        {
+          "program_id": "RTK1_12",
+          "start": 1200,
+          "end": 1230,
+          "genre": "news",
+          "score": 71
+        },
+        {
+          "program_id": "RTK1_13",
+          "start": 1230,
+          "end": 1320,
+          "genre": "drama",
+          "score": 81
+        },
+        {
+          "program_id": "RTK1_14",
+          "start": 1320,
+          "end": 1380,
+          "genre": "news",
+          "score": 86
+        }
+      ]
+    },
+    {
+      "channel_id": 1,
+      "channel_name": "RTK2",
+      "programs": [
+        {
+          "program_id": "RTK2_1",
+          "start": 420,
+          "end": 450,
+          "genre": "sports",
+          "score": 41
+        },
+        {
+          "program_id": "RTK2_2",
+          "start": 450,
+          "end": 570,
+          "genre": "kids",
+          "score": 59
+        },
+        {
+          "program_id": "RTK2_3",
+          "start": 570,
+          "end": 660,
+          "genre": "kids",
+          "score": 89
+        },
+        {
+          "program_id": "RTK2_4",
+          "start": 660,
+          "end": 750,
+          "genre": "talk",
+          "score": 41
+        },
+        {
+          "program_id": "RTK2_5",
+          "start": 750,
+          "end": 870,
+          "genre": "news",
+          "score": 54
+        },
+        {
+          "program_id": "RTK2_6",
+          "start": 870,
+          "end": 930,
+          "genre": "kids",
+          "score": 62
+        },
+        {
+          "program_id": "RTK2_7",
+          "start": 930,
+          "end": 1050,
+          "genre": "news",
+          "score": 44
+        },
+        {
+          "program_id": "RTK2_8",
+          "start": 1050,
+          "end": 1140,
+          "genre": "movie",
+          "score": 61
+        },
+        {
+          "program_id": "RTK2_9",
+          "start": 1140,
+          "end": 1200,
+          "genre": "kids",
+          "score": 46
+        },
+        {
+          "program_id": "RTK2_10",
+          "start": 1200,
+          "end": 1230,
+          "genre": "music",
+          "score": 82
+        },
+        {
+          "program_id": "RTK2_11",
+          "start": 1230,
+          "end": 1350,
+          "genre": "kids",
+          "score": 42
+        },
+        {
+          "program_id": "RTK2_12",
+          "start": 1350,
+          "end": 1380,
+          "genre": "sports",
+          "score": 88
+        }
+      ]
+    },
+    {
+      "channel_id": 2,
+      "channel_name": "KTV",
+      "programs": [
+        {
+          "program_id": "KTV_1",
+          "start": 420,
+          "end": 480,
+          "genre": "kids",
+          "score": 93
+        },
+        {
+          "program_id": "KTV_2",
+          "start": 480,
+          "end": 540,
+          "genre": "drama",
+          "score": 96
+        },
+        {
+          "program_id": "KTV_3",
+          "start": 540,
+          "end": 630,
+          "genre": "talk",
+          "score": 60
+        },
+        {
+          "program_id": "KTV_4",
+          "start": 630,
+          "end": 660,
+          "genre": "kids",
+          "score": 47
+        },
+        {
+          "program_id": "KTV_5",
+          "start": 660,
+          "end": 720,
+          "genre": "news",
+          "score": 62
+        },
+        {
+          "program_id": "KTV_6",
+          "start": 720,
+          "end": 810,
+          "genre": "kids",
+          "score": 69
+        },
+        {
+          "program_id": "KTV_7",
+          "start": 810,
+          "end": 870,
+          "genre": "kids",
+          "score": 63
+        },
+        {
+          "program_id": "KTV_8",
+          "start": 870,
+          "end": 900,
+          "genre": "news",
+          "score": 83
+        },
+        {
+          "program_id": "KTV_9",
+          "start": 900,
+          "end": 1020,
+          "genre": "music",
+          "score": 56
+        },
+        {
+          "program_id": "KTV_10",
+          "start": 1020,
+          "end": 1080,
+          "genre": "talk",
+          "score": 63
+        },
+        {
+          "program_id": "KTV_11",
+          "start": 1080,
+          "end": 1170,
+          "genre": "sports",
+          "score": 49
+        },
+        {
+          "program_id": "KTV_12",
+          "start": 1170,
+          "end": 1260,
+          "genre": "sports",
+          "score": 76
+        },
+        {
+          "program_id": "KTV_13",
+          "start": 1260,
+          "end": 1350,
+          "genre": "kids",
+          "score": 49
+        },
+        {
+          "program_id": "KTV_14",
+          "start": 1350,
+          "end": 1380,
+          "genre": "talk",
+          "score": 73
+        }
+      ]
+    },
+    {
+      "channel_id": 3,
+      "channel_name": "KlanKosova",
+      "programs": [
+        {
+          "program_id": "KlanKosova_1",
+          "start": 420,
+          "end": 480,
+          "genre": "movie",
+          "score": 44
+        },
+        {
+          "program_id": "KlanKosova_2",
+          "start": 480,
+          "end": 510,
+          "genre": "drama",
+          "score": 75
+        },
+        {
+          "program_id": "KlanKosova_3",
+          "start": 510,
+          "end": 570,
+          "genre": "drama",
+          "score": 98
+        },
+        {
+          "program_id": "KlanKosova_4",
+          "start": 570,
+          "end": 600,
+          "genre": "talk",
+          "score": 71
+        },
+        {
+          "program_id": "KlanKosova_5",
+          "start": 600,
+          "end": 720,
+          "genre": "news",
+          "score": 84
+        },
+        {
+          "program_id": "KlanKosova_6",
+          "start": 720,
+          "end": 750,
+          "genre": "music",
+          "score": 53
+        },
+        {
+          "program_id": "KlanKosova_7",
+          "start": 750,
+          "end": 840,
+          "genre": "music",
+          "score": 71
+        },
+        {
+          "program_id": "KlanKosova_8",
+          "start": 840,
+          "end": 930,
+          "genre": "documentary",
+          "score": 100
+        },
+        {
+          "program_id": "KlanKosova_9",
+          "start": 930,
+          "end": 1020,
+          "genre": "music",
+          "score": 94
+        },
+        {
+          "program_id": "KlanKosova_10",
+          "start": 1020,
+          "end": 1050,
+          "genre": "music",
+          "score": 50
+        },
+        {
+          "program_id": "KlanKosova_11",
+          "start": 1050,
+          "end": 1110,
+          "genre": "drama",
+          "score": 89
+        },
+        {
+          "program_id": "KlanKosova_12",
+          "start": 1110,
+          "end": 1200,
+          "genre": "documentary",
+          "score": 98
+        },
+        {
+          "program_id": "KlanKosova_13",
+          "start": 1200,
+          "end": 1290,
+          "genre": "music",
+          "score": 97
+        },
+        {
+          "program_id": "KlanKosova_14",
+          "start": 1290,
+          "end": 1320,
+          "genre": "movie",
+          "score": 98
+        },
+        {
+          "program_id": "KlanKosova_15",
+          "start": 1320,
+          "end": 1380,
+          "genre": "news",
+          "score": 90
+        }
+      ]
+    },
+    {
+      "channel_id": 4,
+      "channel_name": "ATV",
+      "programs": [
+        {
+          "program_id": "ATV_1",
+          "start": 420,
+          "end": 450,
+          "genre": "news",
+          "score": 54
+        },
+        {
+          "program_id": "ATV_2",
+          "start": 450,
+          "end": 540,
+          "genre": "news",
+          "score": 84
+        },
+        {
+          "program_id": "ATV_3",
+          "start": 540,
+          "end": 660,
+          "genre": "news",
+          "score": 67
+        },
+        {
+          "program_id": "ATV_4",
+          "start": 660,
+          "end": 720,
+          "genre": "talk",
+          "score": 70
+        },
+        {
+          "program_id": "ATV_5",
+          "start": 720,
+          "end": 810,
+          "genre": "movie",
+          "score": 74
+        },
+        {
+          "program_id": "ATV_6",
+          "start": 810,
+          "end": 840,
+          "genre": "news",
+          "score": 47
+        },
+        {
+          "program_id": "ATV_7",
+          "start": 840,
+          "end": 930,
+          "genre": "documentary",
+          "score": 84
+        },
+        {
+          "program_id": "ATV_8",
+          "start": 930,
+          "end": 960,
+          "genre": "news",
+          "score": 83
+        },
+        {
+          "program_id": "ATV_9",
+          "start": 960,
+          "end": 1050,
+          "genre": "drama",
+          "score": 43
+        },
+        {
+          "program_id": "ATV_10",
+          "start": 1050,
+          "end": 1170,
+          "genre": "talk",
+          "score": 48
+        },
+        {
+          "program_id": "ATV_11",
+          "start": 1170,
+          "end": 1200,
+          "genre": "news",
+          "score": 58
+        },
+        {
+          "program_id": "ATV_12",
+          "start": 1200,
+          "end": 1230,
+          "genre": "music",
+          "score": 81
+        },
+        {
+          "program_id": "ATV_13",
+          "start": 1230,
+          "end": 1350,
+          "genre": "drama",
+          "score": 99
+        },
+        {
+          "program_id": "ATV_14",
+          "start": 1350,
+          "end": 1380,
+          "genre": "drama",
+          "score": 84
+        }
+      ]
+    },
+    {
+      "channel_id": 5,
+      "channel_name": "RTV21",
+      "programs": [
+        {
+          "program_id": "RTV21_1",
+          "start": 420,
+          "end": 510,
+          "genre": "kids",
+          "score": 55
+        },
+        {
+          "program_id": "RTV21_2",
+          "start": 510,
+          "end": 570,
+          "genre": "drama",
+          "score": 89
+        },
+        {
+          "program_id": "RTV21_3",
+          "start": 570,
+          "end": 690,
+          "genre": "drama",
+          "score": 62
+        },
+        {
+          "program_id": "RTV21_4",
+          "start": 690,
+          "end": 810,
+          "genre": "movie",
+          "score": 76
+        },
+        {
+          "program_id": "RTV21_5",
+          "start": 810,
+          "end": 840,
+          "genre": "kids",
+          "score": 71
+        },
+        {
+          "program_id": "RTV21_6",
+          "start": 840,
+          "end": 870,
+          "genre": "talk",
+          "score": 59
+        },
+        {
+          "program_id": "RTV21_7",
+          "start": 870,
+          "end": 900,
+          "genre": "documentary",
+          "score": 40
+        },
+        {
+          "program_id": "RTV21_8",
+          "start": 900,
+          "end": 990,
+          "genre": "documentary",
+          "score": 54
+        },
+        {
+          "program_id": "RTV21_9",
+          "start": 990,
+          "end": 1020,
+          "genre": "drama",
+          "score": 41
+        },
+        {
+          "program_id": "RTV21_10",
+          "start": 1020,
+          "end": 1140,
+          "genre": "news",
+          "score": 75
+        },
+        {
+          "program_id": "RTV21_11",
+          "start": 1140,
+          "end": 1230,
+          "genre": "kids",
+          "score": 97
+        },
+        {
+          "program_id": "RTV21_12",
+          "start": 1230,
+          "end": 1320,
+          "genre": "news",
+          "score": 98
+        },
+        {
+          "program_id": "RTV21_13",
+          "start": 1320,
+          "end": 1350,
+          "genre": "talk",
+          "score": 63
+        },
+        {
+          "program_id": "RTV21_14",
+          "start": 1350,
+          "end": 1380,
+          "genre": "news",
+          "score": 69
+        }
+      ]
+    },
+    {
+      "channel_id": 6,
+      "channel_name": "RTVDukagjini",
+      "programs": [
+        {
+          "program_id": "RTVDukagjini_1",
+          "start": 420,
+          "end": 480,
+          "genre": "documentary",
+          "score": 56
+        },
+        {
+          "program_id": "RTVDukagjini_2",
+          "start": 480,
+          "end": 540,
+          "genre": "news",
+          "score": 70
+        },
+        {
+          "program_id": "RTVDukagjini_3",
+          "start": 540,
+          "end": 630,
+          "genre": "movie",
+          "score": 70
+        },
+        {
+          "program_id": "RTVDukagjini_4",
+          "start": 630,
+          "end": 690,
+          "genre": "talk",
+          "score": 78
+        },
+        {
+          "program_id": "RTVDukagjini_5",
+          "start": 690,
+          "end": 720,
+          "genre": "drama",
+          "score": 52
+        },
+        {
+          "program_id": "RTVDukagjini_6",
+          "start": 720,
+          "end": 780,
+          "genre": "sports",
+          "score": 84
+        },
+        {
+          "program_id": "RTVDukagjini_7",
+          "start": 780,
+          "end": 840,
+          "genre": "sports",
+          "score": 59
+        },
+        {
+          "program_id": "RTVDukagjini_8",
+          "start": 840,
+          "end": 870,
+          "genre": "kids",
+          "score": 63
+        },
+        {
+          "program_id": "RTVDukagjini_9",
+          "start": 870,
+          "end": 960,
+          "genre": "documentary",
+          "score": 41
+        },
+        {
+          "program_id": "RTVDukagjini_10",
+          "start": 960,
+          "end": 1080,
+          "genre": "movie",
+          "score": 67
+        },
+        {
+          "program_id": "RTVDukagjini_11",
+          "start": 1080,
+          "end": 1200,
+          "genre": "kids",
+          "score": 76
+        },
+        {
+          "program_id": "RTVDukagjini_12",
+          "start": 1200,
+          "end": 1260,
+          "genre": "movie",
+          "score": 85
+        },
+        {
+          "program_id": "RTVDukagjini_13",
+          "start": 1260,
+          "end": 1350,
+          "genre": "documentary",
+          "score": 54
+        },
+        {
+          "program_id": "RTVDukagjini_14",
+          "start": 1350,
+          "end": 1380,
+          "genre": "sports",
+          "score": 61
+        }
+      ]
+    },
+    {
+      "channel_id": 7,
+      "channel_name": "Rubikon",
+      "programs": [
+        {
+          "program_id": "Rubikon_1",
+          "start": 420,
+          "end": 510,
+          "genre": "movie",
+          "score": 74
+        },
+        {
+          "program_id": "Rubikon_2",
+          "start": 510,
+          "end": 600,
+          "genre": "news",
+          "score": 83
+        },
+        {
+          "program_id": "Rubikon_3",
+          "start": 600,
+          "end": 720,
+          "genre": "sports",
+          "score": 54
+        },
+        {
+          "program_id": "Rubikon_4",
+          "start": 720,
+          "end": 840,
+          "genre": "news",
+          "score": 80
+        },
+        {
+          "program_id": "Rubikon_5",
+          "start": 840,
+          "end": 900,
+          "genre": "sports",
+          "score": 60
+        },
+        {
+          "program_id": "Rubikon_6",
+          "start": 900,
+          "end": 930,
+          "genre": "music",
+          "score": 57
+        },
+        {
+          "program_id": "Rubikon_7",
+          "start": 930,
+          "end": 990,
+          "genre": "sports",
+          "score": 68
+        },
+        {
+          "program_id": "Rubikon_8",
+          "start": 990,
+          "end": 1020,
+          "genre": "documentary",
+          "score": 45
+        },
+        {
+          "program_id": "Rubikon_9",
+          "start": 1020,
+          "end": 1050,
+          "genre": "movie",
+          "score": 57
+        },
+        {
+          "program_id": "Rubikon_10",
+          "start": 1050,
+          "end": 1140,
+          "genre": "music",
+          "score": 87
+        },
+        {
+          "program_id": "Rubikon_11",
+          "start": 1140,
+          "end": 1170,
+          "genre": "music",
+          "score": 47
+        },
+        {
+          "program_id": "Rubikon_12",
+          "start": 1170,
+          "end": 1230,
+          "genre": "sports",
+          "score": 99
+        },
+        {
+          "program_id": "Rubikon_13",
+          "start": 1230,
+          "end": 1320,
+          "genre": "music",
+          "score": 74
+        },
+        {
+          "program_id": "Rubikon_14",
+          "start": 1320,
+          "end": 1350,
+          "genre": "documentary",
+          "score": 94
+        },
+        {
+          "program_id": "Rubikon_15",
+          "start": 1350,
+          "end": 1380,
+          "genre": "movie",
+          "score": 47
+        }
+      ]
+    },
+    {
+      "channel_id": 8,
+      "channel_name": "ABCNews",
+      "programs": [
+        {
+          "program_id": "ABCNews_1",
+          "start": 420,
+          "end": 480,
+          "genre": "kids",
+          "score": 44
+        },
+        {
+          "program_id": "ABCNews_2",
+          "start": 480,
+          "end": 570,
+          "genre": "kids",
+          "score": 86
+        },
+        {
+          "program_id": "ABCNews_3",
+          "start": 570,
+          "end": 690,
+          "genre": "news",
+          "score": 56
+        },
+        {
+          "program_id": "ABCNews_4",
+          "start": 690,
+          "end": 780,
+          "genre": "music",
+          "score": 93
+        },
+        {
+          "program_id": "ABCNews_5",
+          "start": 780,
+          "end": 900,
+          "genre": "music",
+          "score": 100
+        },
+        {
+          "program_id": "ABCNews_6",
+          "start": 900,
+          "end": 960,
+          "genre": "talk",
+          "score": 81
+        },
+        {
+          "program_id": "ABCNews_7",
+          "start": 960,
+          "end": 1020,
+          "genre": "talk",
+          "score": 88
+        },
+        {
+          "program_id": "ABCNews_8",
+          "start": 1020,
+          "end": 1110,
+          "genre": "documentary",
+          "score": 64
+        },
+        {
+          "program_id": "ABCNews_9",
+          "start": 1110,
+          "end": 1140,
+          "genre": "sports",
+          "score": 45
+        },
+        {
+          "program_id": "ABCNews_10",
+          "start": 1140,
+          "end": 1230,
+          "genre": "music",
+          "score": 80
+        },
+        {
+          "program_id": "ABCNews_11",
+          "start": 1230,
+          "end": 1260,
+          "genre": "documentary",
+          "score": 58
+        },
+        {
+          "program_id": "ABCNews_12",
+          "start": 1260,
+          "end": 1380,
+          "genre": "sports",
+          "score": 49
+        }
+      ]
+    },
+    {
+      "channel_id": 9,
+      "channel_name": "SportKosova",
+      "programs": [
+        {
+          "program_id": "SportKosova_1",
+          "start": 420,
+          "end": 480,
+          "genre": "sports",
+          "score": 67
+        },
+        {
+          "program_id": "SportKosova_2",
+          "start": 480,
+          "end": 510,
+          "genre": "talk",
+          "score": 45
+        },
+        {
+          "program_id": "SportKosova_3",
+          "start": 510,
+          "end": 630,
+          "genre": "movie",
+          "score": 50
+        },
+        {
+          "program_id": "SportKosova_4",
+          "start": 630,
+          "end": 660,
+          "genre": "kids",
+          "score": 99
+        },
+        {
+          "program_id": "SportKosova_5",
+          "start": 660,
+          "end": 750,
+          "genre": "kids",
+          "score": 56
+        },
+        {
+          "program_id": "SportKosova_6",
+          "start": 750,
+          "end": 870,
+          "genre": "sports",
+          "score": 42
+        },
+        {
+          "program_id": "SportKosova_7",
+          "start": 870,
+          "end": 990,
+          "genre": "drama",
+          "score": 68
+        },
+        {
+          "program_id": "SportKosova_8",
+          "start": 990,
+          "end": 1110,
+          "genre": "news",
+          "score": 93
+        },
+        {
+          "program_id": "SportKosova_9",
+          "start": 1110,
+          "end": 1230,
+          "genre": "talk",
+          "score": 75
+        },
+        {
+          "program_id": "SportKosova_10",
+          "start": 1230,
+          "end": 1260,
+          "genre": "talk",
+          "score": 97
+        },
+        {
+          "program_id": "SportKosova_11",
+          "start": 1260,
+          "end": 1320,
+          "genre": "sports",
+          "score": 86
+        },
+        {
+          "program_id": "SportKosova_12",
+          "start": 1320,
+          "end": 1380,
+          "genre": "movie",
+          "score": 54
+        }
+      ]
+    },
+    {
+      "channel_id": 10,
+      "channel_name": "MusicKosova",
+      "programs": [
+        {
+          "program_id": "MusicKosova_1",
+          "start": 420,
+          "end": 480,
+          "genre": "talk",
+          "score": 60
+        },
+        {
+          "program_id": "MusicKosova_2",
+          "start": 480,
+          "end": 510,
+          "genre": "movie",
+          "score": 74
+        },
+        {
+          "program_id": "MusicKosova_3",
+          "start": 510,
+          "end": 540,
+          "genre": "sports",
+          "score": 64
+        },
+        {
+          "program_id": "MusicKosova_4",
+          "start": 540,
+          "end": 660,
+          "genre": "music",
+          "score": 60
+        },
+        {
+          "program_id": "MusicKosova_5",
+          "start": 660,
+          "end": 750,
+          "genre": "documentary",
+          "score": 94
+        },
+        {
+          "program_id": "MusicKosova_6",
+          "start": 750,
+          "end": 780,
+          "genre": "documentary",
+          "score": 83
+        },
+        {
+          "program_id": "MusicKosova_7",
+          "start": 780,
+          "end": 870,
+          "genre": "music",
+          "score": 54
+        },
+        {
+          "program_id": "MusicKosova_8",
+          "start": 870,
+          "end": 960,
+          "genre": "movie",
+          "score": 55
+        },
+        {
+          "program_id": "MusicKosova_9",
+          "start": 960,
+          "end": 1050,
+          "genre": "drama",
+          "score": 72
+        },
+        {
+          "program_id": "MusicKosova_10",
+          "start": 1050,
+          "end": 1080,
+          "genre": "news",
+          "score": 81
+        },
+        {
+          "program_id": "MusicKosova_11",
+          "start": 1080,
+          "end": 1140,
+          "genre": "movie",
+          "score": 42
+        },
+        {
+          "program_id": "MusicKosova_12",
+          "start": 1140,
+          "end": 1200,
+          "genre": "documentary",
+          "score": 90
+        },
+        {
+          "program_id": "MusicKosova_13",
+          "start": 1200,
+          "end": 1320,
+          "genre": "kids",
+          "score": 90
+        },
+        {
+          "program_id": "MusicKosova_14",
+          "start": 1320,
+          "end": 1380,
+          "genre": "sports",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "channel_id": 11,
+      "channel_name": "BizTV",
+      "programs": [
+        {
+          "program_id": "BizTV_1",
+          "start": 420,
+          "end": 540,
+          "genre": "sports",
+          "score": 68
+        },
+        {
+          "program_id": "BizTV_2",
+          "start": 540,
+          "end": 570,
+          "genre": "documentary",
+          "score": 91
+        },
+        {
+          "program_id": "BizTV_3",
+          "start": 570,
+          "end": 690,
+          "genre": "movie",
+          "score": 75
+        },
+        {
+          "program_id": "BizTV_4",
+          "start": 690,
+          "end": 750,
+          "genre": "sports",
+          "score": 82
+        },
+        {
+          "program_id": "BizTV_5",
+          "start": 750,
+          "end": 780,
+          "genre": "kids",
+          "score": 50
+        },
+        {
+          "program_id": "BizTV_6",
+          "start": 780,
+          "end": 840,
+          "genre": "news",
+          "score": 58
+        },
+        {
+          "program_id": "BizTV_7",
+          "start": 840,
+          "end": 960,
+          "genre": "kids",
+          "score": 53
+        },
+        {
+          "program_id": "BizTV_8",
+          "start": 960,
+          "end": 1050,
+          "genre": "talk",
+          "score": 47
+        },
+        {
+          "program_id": "BizTV_9",
+          "start": 1050,
+          "end": 1110,
+          "genre": "news",
+          "score": 64
+        },
+        {
+          "program_id": "BizTV_10",
+          "start": 1110,
+          "end": 1230,
+          "genre": "drama",
+          "score": 92
+        },
+        {
+          "program_id": "BizTV_11",
+          "start": 1230,
+          "end": 1350,
+          "genre": "news",
+          "score": 81
+        },
+        {
+          "program_id": "BizTV_12",
+          "start": 1350,
+          "end": 1380,
+          "genre": "kids",
+          "score": 74
+        }
+      ]
+    },
+    {
+      "channel_id": 12,
+      "channel_name": "TVPrishtina",
+      "programs": [
+        {
+          "program_id": "TVPrishtina_1",
+          "start": 420,
+          "end": 480,
+          "genre": "movie",
+          "score": 80
+        },
+        {
+          "program_id": "TVPrishtina_2",
+          "start": 480,
+          "end": 600,
+          "genre": "talk",
+          "score": 75
+        },
+        {
+          "program_id": "TVPrishtina_3",
+          "start": 600,
+          "end": 660,
+          "genre": "movie",
+          "score": 84
+        },
+        {
+          "program_id": "TVPrishtina_4",
+          "start": 660,
+          "end": 720,
+          "genre": "movie",
+          "score": 99
+        },
+        {
+          "program_id": "TVPrishtina_5",
+          "start": 720,
+          "end": 780,
+          "genre": "sports",
+          "score": 40
+        },
+        {
+          "program_id": "TVPrishtina_6",
+          "start": 780,
+          "end": 840,
+          "genre": "talk",
+          "score": 62
+        },
+        {
+          "program_id": "TVPrishtina_7",
+          "start": 840,
+          "end": 960,
+          "genre": "kids",
+          "score": 86
+        },
+        {
+          "program_id": "TVPrishtina_8",
+          "start": 960,
+          "end": 1050,
+          "genre": "movie",
+          "score": 68
+        },
+        {
+          "program_id": "TVPrishtina_9",
+          "start": 1050,
+          "end": 1110,
+          "genre": "talk",
+          "score": 77
+        },
+        {
+          "program_id": "TVPrishtina_10",
+          "start": 1110,
+          "end": 1200,
+          "genre": "talk",
+          "score": 91
+        },
+        {
+          "program_id": "TVPrishtina_11",
+          "start": 1200,
+          "end": 1260,
+          "genre": "documentary",
+          "score": 71
+        },
+        {
+          "program_id": "TVPrishtina_12",
+          "start": 1260,
+          "end": 1320,
+          "genre": "drama",
+          "score": 51
+        },
+        {
+          "program_id": "TVPrishtina_13",
+          "start": 1320,
+          "end": 1380,
+          "genre": "documentary",
+          "score": 71
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1586 @@
+{
+  "opening_time": 360,
+  "closing_time": 1380,
+  "min_duration": 30,
+  "max_consecutive_genre": 2,
+  "channels_count": 15,
+  "switch_penalty": 5,
+  "termination_penalty": 100,
+  "priority_blocks": [
+    {
+      "start": 720,
+      "end": 780,
+      "allowed_channels": [
+        0,
+        1
+      ]
+    },
+    {
+      "start": 1140,
+      "end": 1200,
+      "allowed_channels": [
+        0,
+        1
+      ]
+    }
+  ],
+  "time_preferences": [
+    {
+      "start": 360,
+      "end": 540,
+      "preferred_genre": "news",
+      "bonus": 25
+    },
+    {
+      "start": 540,
+      "end": 720,
+      "preferred_genre": "talk",
+      "bonus": 15
+    },
+    {
+      "start": 720,
+      "end": 1020,
+      "preferred_genre": "sports",
+      "bonus": 30
+    },
+    {
+      "start": 1020,
+      "end": 1260,
+      "preferred_genre": "movie",
+      "bonus": 40
+    },
+    {
+      "start": 1260,
+      "end": 1380,
+      "preferred_genre": "music",
+      "bonus": 20
+    }
+  ],
+  "channels": [
+    {
+      "channel_id": 0,
+      "channel_name": "HRT1",
+      "programs": [
+        {
+          "program_id": "HRT1_1",
+          "start": 360,
+          "end": 480,
+          "genre": "sports",
+          "score": 94
+        },
+        {
+          "program_id": "HRT1_2",
+          "start": 480,
+          "end": 570,
+          "genre": "sports",
+          "score": 50
+        },
+        {
+          "program_id": "HRT1_3",
+          "start": 570,
+          "end": 660,
+          "genre": "comedy",
+          "score": 85
+        },
+        {
+          "program_id": "HRT1_4",
+          "start": 660,
+          "end": 690,
+          "genre": "comedy",
+          "score": 41
+        },
+        {
+          "program_id": "HRT1_5",
+          "start": 690,
+          "end": 810,
+          "genre": "drama",
+          "score": 99
+        },
+        {
+          "program_id": "HRT1_6",
+          "start": 810,
+          "end": 900,
+          "genre": "movie",
+          "score": 43
+        },
+        {
+          "program_id": "HRT1_7",
+          "start": 900,
+          "end": 990,
+          "genre": "reality",
+          "score": 72
+        },
+        {
+          "program_id": "HRT1_8",
+          "start": 990,
+          "end": 1050,
+          "genre": "sports",
+          "score": 57
+        },
+        {
+          "program_id": "HRT1_9",
+          "start": 1050,
+          "end": 1110,
+          "genre": "sports",
+          "score": 44
+        },
+        {
+          "program_id": "HRT1_10",
+          "start": 1110,
+          "end": 1170,
+          "genre": "sports",
+          "score": 56
+        },
+        {
+          "program_id": "HRT1_11",
+          "start": 1170,
+          "end": 1290,
+          "genre": "sports",
+          "score": 41
+        },
+        {
+          "program_id": "HRT1_12",
+          "start": 1290,
+          "end": 1350,
+          "genre": "sports",
+          "score": 53
+        },
+        {
+          "program_id": "HRT1_13",
+          "start": 1350,
+          "end": 1380,
+          "genre": "comedy",
+          "score": 93
+        }
+      ]
+    },
+    {
+      "channel_id": 1,
+      "channel_name": "HRT2",
+      "programs": [
+        {
+          "program_id": "HRT2_1",
+          "start": 360,
+          "end": 390,
+          "genre": "movie",
+          "score": 81
+        },
+        {
+          "program_id": "HRT2_2",
+          "start": 390,
+          "end": 510,
+          "genre": "reality",
+          "score": 85
+        },
+        {
+          "program_id": "HRT2_3",
+          "start": 510,
+          "end": 570,
+          "genre": "news",
+          "score": 97
+        },
+        {
+          "program_id": "HRT2_4",
+          "start": 570,
+          "end": 660,
+          "genre": "sports",
+          "score": 72
+        },
+        {
+          "program_id": "HRT2_5",
+          "start": 660,
+          "end": 690,
+          "genre": "movie",
+          "score": 79
+        },
+        {
+          "program_id": "HRT2_6",
+          "start": 690,
+          "end": 720,
+          "genre": "drama",
+          "score": 96
+        },
+        {
+          "program_id": "HRT2_7",
+          "start": 720,
+          "end": 750,
+          "genre": "movie",
+          "score": 61
+        },
+        {
+          "program_id": "HRT2_8",
+          "start": 750,
+          "end": 780,
+          "genre": "sports",
+          "score": 88
+        },
+        {
+          "program_id": "HRT2_9",
+          "start": 780,
+          "end": 810,
+          "genre": "sports",
+          "score": 96
+        },
+        {
+          "program_id": "HRT2_10",
+          "start": 810,
+          "end": 870,
+          "genre": "drama",
+          "score": 81
+        },
+        {
+          "program_id": "HRT2_11",
+          "start": 870,
+          "end": 990,
+          "genre": "news",
+          "score": 94
+        },
+        {
+          "program_id": "HRT2_12",
+          "start": 990,
+          "end": 1050,
+          "genre": "sports",
+          "score": 51
+        },
+        {
+          "program_id": "HRT2_13",
+          "start": 1050,
+          "end": 1110,
+          "genre": "movie",
+          "score": 51
+        },
+        {
+          "program_id": "HRT2_14",
+          "start": 1110,
+          "end": 1170,
+          "genre": "sports",
+          "score": 42
+        },
+        {
+          "program_id": "HRT2_15",
+          "start": 1170,
+          "end": 1230,
+          "genre": "reality",
+          "score": 62
+        },
+        {
+          "program_id": "HRT2_16",
+          "start": 1230,
+          "end": 1320,
+          "genre": "reality",
+          "score": 86
+        },
+        {
+          "program_id": "HRT2_17",
+          "start": 1320,
+          "end": 1380,
+          "genre": "sports",
+          "score": 95
+        }
+      ]
+    },
+    {
+      "channel_id": 2,
+      "channel_name": "HRT3",
+      "programs": [
+        {
+          "program_id": "HRT3_1",
+          "start": 360,
+          "end": 420,
+          "genre": "kids",
+          "score": 46
+        },
+        {
+          "program_id": "HRT3_2",
+          "start": 420,
+          "end": 540,
+          "genre": "comedy",
+          "score": 44
+        },
+        {
+          "program_id": "HRT3_3",
+          "start": 540,
+          "end": 600,
+          "genre": "sports",
+          "score": 71
+        },
+        {
+          "program_id": "HRT3_4",
+          "start": 600,
+          "end": 660,
+          "genre": "movie",
+          "score": 53
+        },
+        {
+          "program_id": "HRT3_5",
+          "start": 660,
+          "end": 780,
+          "genre": "sports",
+          "score": 54
+        },
+        {
+          "program_id": "HRT3_6",
+          "start": 780,
+          "end": 900,
+          "genre": "comedy",
+          "score": 66
+        },
+        {
+          "program_id": "HRT3_7",
+          "start": 900,
+          "end": 990,
+          "genre": "sports",
+          "score": 55
+        },
+        {
+          "program_id": "HRT3_8",
+          "start": 990,
+          "end": 1110,
+          "genre": "drama",
+          "score": 42
+        },
+        {
+          "program_id": "HRT3_9",
+          "start": 1110,
+          "end": 1170,
+          "genre": "movie",
+          "score": 84
+        },
+        {
+          "program_id": "HRT3_10",
+          "start": 1170,
+          "end": 1290,
+          "genre": "sports",
+          "score": 42
+        },
+        {
+          "program_id": "HRT3_11",
+          "start": 1290,
+          "end": 1350,
+          "genre": "movie",
+          "score": 66
+        },
+        {
+          "program_id": "HRT3_12",
+          "start": 1350,
+          "end": 1380,
+          "genre": "news",
+          "score": 71
+        }
+      ]
+    },
+    {
+      "channel_id": 3,
+      "channel_name": "NovaTV",
+      "programs": [
+        {
+          "program_id": "NovaTV_1",
+          "start": 360,
+          "end": 390,
+          "genre": "movie",
+          "score": 43
+        },
+        {
+          "program_id": "NovaTV_2",
+          "start": 390,
+          "end": 450,
+          "genre": "music",
+          "score": 91
+        },
+        {
+          "program_id": "NovaTV_3",
+          "start": 450,
+          "end": 480,
+          "genre": "sports",
+          "score": 99
+        },
+        {
+          "program_id": "NovaTV_4",
+          "start": 480,
+          "end": 600,
+          "genre": "news",
+          "score": 91
+        },
+        {
+          "program_id": "NovaTV_5",
+          "start": 600,
+          "end": 660,
+          "genre": "movie",
+          "score": 60
+        },
+        {
+          "program_id": "NovaTV_6",
+          "start": 660,
+          "end": 750,
+          "genre": "sports",
+          "score": 67
+        },
+        {
+          "program_id": "NovaTV_7",
+          "start": 750,
+          "end": 780,
+          "genre": "movie",
+          "score": 82
+        },
+        {
+          "program_id": "NovaTV_8",
+          "start": 780,
+          "end": 870,
+          "genre": "music",
+          "score": 68
+        },
+        {
+          "program_id": "NovaTV_9",
+          "start": 870,
+          "end": 930,
+          "genre": "sports",
+          "score": 87
+        },
+        {
+          "program_id": "NovaTV_10",
+          "start": 930,
+          "end": 1020,
+          "genre": "sports",
+          "score": 46
+        },
+        {
+          "program_id": "NovaTV_11",
+          "start": 1020,
+          "end": 1050,
+          "genre": "news",
+          "score": 87
+        },
+        {
+          "program_id": "NovaTV_12",
+          "start": 1050,
+          "end": 1170,
+          "genre": "movie",
+          "score": 40
+        },
+        {
+          "program_id": "NovaTV_13",
+          "start": 1170,
+          "end": 1200,
+          "genre": "talk",
+          "score": 62
+        },
+        {
+          "program_id": "NovaTV_14",
+          "start": 1200,
+          "end": 1290,
+          "genre": "movie",
+          "score": 54
+        },
+        {
+          "program_id": "NovaTV_15",
+          "start": 1290,
+          "end": 1350,
+          "genre": "movie",
+          "score": 88
+        },
+        {
+          "program_id": "NovaTV_16",
+          "start": 1350,
+          "end": 1380,
+          "genre": "movie",
+          "score": 41
+        }
+      ]
+    },
+    {
+      "channel_id": 4,
+      "channel_name": "RTL_Hrvatska",
+      "programs": [
+        {
+          "program_id": "RTL_Hrvatska_1",
+          "start": 360,
+          "end": 450,
+          "genre": "reality",
+          "score": 94
+        },
+        {
+          "program_id": "RTL_Hrvatska_2",
+          "start": 450,
+          "end": 570,
+          "genre": "sports",
+          "score": 83
+        },
+        {
+          "program_id": "RTL_Hrvatska_3",
+          "start": 570,
+          "end": 690,
+          "genre": "kids",
+          "score": 54
+        },
+        {
+          "program_id": "RTL_Hrvatska_4",
+          "start": 690,
+          "end": 810,
+          "genre": "sports",
+          "score": 47
+        },
+        {
+          "program_id": "RTL_Hrvatska_5",
+          "start": 810,
+          "end": 870,
+          "genre": "sports",
+          "score": 43
+        },
+        {
+          "program_id": "RTL_Hrvatska_6",
+          "start": 870,
+          "end": 990,
+          "genre": "sports",
+          "score": 67
+        },
+        {
+          "program_id": "RTL_Hrvatska_7",
+          "start": 990,
+          "end": 1110,
+          "genre": "music",
+          "score": 83
+        },
+        {
+          "program_id": "RTL_Hrvatska_8",
+          "start": 1110,
+          "end": 1200,
+          "genre": "sports",
+          "score": 46
+        },
+        {
+          "program_id": "RTL_Hrvatska_9",
+          "start": 1200,
+          "end": 1260,
+          "genre": "talk",
+          "score": 62
+        },
+        {
+          "program_id": "RTL_Hrvatska_10",
+          "start": 1260,
+          "end": 1320,
+          "genre": "comedy",
+          "score": 85
+        },
+        {
+          "program_id": "RTL_Hrvatska_11",
+          "start": 1320,
+          "end": 1380,
+          "genre": "reality",
+          "score": 95
+        }
+      ]
+    },
+    {
+      "channel_id": 5,
+      "channel_name": "SportKlub1",
+      "programs": [
+        {
+          "program_id": "SportKlub1_1",
+          "start": 360,
+          "end": 450,
+          "genre": "sports",
+          "score": 50
+        },
+        {
+          "program_id": "SportKlub1_2",
+          "start": 450,
+          "end": 570,
+          "genre": "sports",
+          "score": 59
+        },
+        {
+          "program_id": "SportKlub1_3",
+          "start": 570,
+          "end": 630,
+          "genre": "sports",
+          "score": 84
+        },
+        {
+          "program_id": "SportKlub1_4",
+          "start": 630,
+          "end": 690,
+          "genre": "sports",
+          "score": 46
+        },
+        {
+          "program_id": "SportKlub1_5",
+          "start": 690,
+          "end": 810,
+          "genre": "sports",
+          "score": 87
+        },
+        {
+          "program_id": "SportKlub1_6",
+          "start": 810,
+          "end": 930,
+          "genre": "sports",
+          "score": 47
+        },
+        {
+          "program_id": "SportKlub1_7",
+          "start": 930,
+          "end": 1020,
+          "genre": "sports",
+          "score": 85
+        },
+        {
+          "program_id": "SportKlub1_8",
+          "start": 1020,
+          "end": 1140,
+          "genre": "sports",
+          "score": 99
+        },
+        {
+          "program_id": "SportKlub1_9",
+          "start": 1140,
+          "end": 1200,
+          "genre": "sports",
+          "score": 85
+        },
+        {
+          "program_id": "SportKlub1_10",
+          "start": 1200,
+          "end": 1320,
+          "genre": "sports",
+          "score": 92
+        },
+        {
+          "program_id": "SportKlub1_11",
+          "start": 1320,
+          "end": 1380,
+          "genre": "sports",
+          "score": 70
+        }
+      ]
+    },
+    {
+      "channel_id": 6,
+      "channel_name": "SportKlub2",
+      "programs": [
+        {
+          "program_id": "SportKlub2_1",
+          "start": 360,
+          "end": 390,
+          "genre": "sports",
+          "score": 61
+        },
+        {
+          "program_id": "SportKlub2_2",
+          "start": 390,
+          "end": 420,
+          "genre": "sports",
+          "score": 42
+        },
+        {
+          "program_id": "SportKlub2_3",
+          "start": 420,
+          "end": 540,
+          "genre": "sports",
+          "score": 91
+        },
+        {
+          "program_id": "SportKlub2_4",
+          "start": 540,
+          "end": 630,
+          "genre": "sports",
+          "score": 47
+        },
+        {
+          "program_id": "SportKlub2_5",
+          "start": 630,
+          "end": 690,
+          "genre": "sports",
+          "score": 80
+        },
+        {
+          "program_id": "SportKlub2_6",
+          "start": 690,
+          "end": 780,
+          "genre": "sports",
+          "score": 92
+        },
+        {
+          "program_id": "SportKlub2_7",
+          "start": 780,
+          "end": 870,
+          "genre": "sports",
+          "score": 70
+        },
+        {
+          "program_id": "SportKlub2_8",
+          "start": 870,
+          "end": 930,
+          "genre": "sports",
+          "score": 75
+        },
+        {
+          "program_id": "SportKlub2_9",
+          "start": 930,
+          "end": 960,
+          "genre": "sports",
+          "score": 57
+        },
+        {
+          "program_id": "SportKlub2_10",
+          "start": 960,
+          "end": 990,
+          "genre": "sports",
+          "score": 62
+        },
+        {
+          "program_id": "SportKlub2_11",
+          "start": 990,
+          "end": 1050,
+          "genre": "sports",
+          "score": 68
+        },
+        {
+          "program_id": "SportKlub2_12",
+          "start": 1050,
+          "end": 1140,
+          "genre": "sports",
+          "score": 44
+        },
+        {
+          "program_id": "SportKlub2_13",
+          "start": 1140,
+          "end": 1170,
+          "genre": "sports",
+          "score": 78
+        },
+        {
+          "program_id": "SportKlub2_14",
+          "start": 1170,
+          "end": 1200,
+          "genre": "sports",
+          "score": 50
+        },
+        {
+          "program_id": "SportKlub2_15",
+          "start": 1200,
+          "end": 1260,
+          "genre": "sports",
+          "score": 73
+        },
+        {
+          "program_id": "SportKlub2_16",
+          "start": 1260,
+          "end": 1290,
+          "genre": "sports",
+          "score": 64
+        },
+        {
+          "program_id": "SportKlub2_17",
+          "start": 1290,
+          "end": 1380,
+          "genre": "sports",
+          "score": 54
+        }
+      ]
+    },
+    {
+      "channel_id": 7,
+      "channel_name": "ArenaSport1",
+      "programs": [
+        {
+          "program_id": "ArenaSport1_1",
+          "start": 360,
+          "end": 450,
+          "genre": "sports",
+          "score": 54
+        },
+        {
+          "program_id": "ArenaSport1_2",
+          "start": 450,
+          "end": 570,
+          "genre": "sports",
+          "score": 66
+        },
+        {
+          "program_id": "ArenaSport1_3",
+          "start": 570,
+          "end": 660,
+          "genre": "sports",
+          "score": 75
+        },
+        {
+          "program_id": "ArenaSport1_4",
+          "start": 660,
+          "end": 750,
+          "genre": "sports",
+          "score": 90
+        },
+        {
+          "program_id": "ArenaSport1_5",
+          "start": 750,
+          "end": 780,
+          "genre": "sports",
+          "score": 74
+        },
+        {
+          "program_id": "ArenaSport1_6",
+          "start": 780,
+          "end": 900,
+          "genre": "sports",
+          "score": 71
+        },
+        {
+          "program_id": "ArenaSport1_7",
+          "start": 900,
+          "end": 930,
+          "genre": "sports",
+          "score": 89
+        },
+        {
+          "program_id": "ArenaSport1_8",
+          "start": 930,
+          "end": 1020,
+          "genre": "sports",
+          "score": 63
+        },
+        {
+          "program_id": "ArenaSport1_9",
+          "start": 1020,
+          "end": 1080,
+          "genre": "sports",
+          "score": 74
+        },
+        {
+          "program_id": "ArenaSport1_10",
+          "start": 1080,
+          "end": 1110,
+          "genre": "sports",
+          "score": 41
+        },
+        {
+          "program_id": "ArenaSport1_11",
+          "start": 1110,
+          "end": 1230,
+          "genre": "sports",
+          "score": 56
+        },
+        {
+          "program_id": "ArenaSport1_12",
+          "start": 1230,
+          "end": 1260,
+          "genre": "sports",
+          "score": 93
+        },
+        {
+          "program_id": "ArenaSport1_13",
+          "start": 1260,
+          "end": 1290,
+          "genre": "sports",
+          "score": 50
+        },
+        {
+          "program_id": "ArenaSport1_14",
+          "start": 1290,
+          "end": 1380,
+          "genre": "sports",
+          "score": 49
+        }
+      ]
+    },
+    {
+      "channel_id": 8,
+      "channel_name": "ArenaSport2",
+      "programs": [
+        {
+          "program_id": "ArenaSport2_1",
+          "start": 360,
+          "end": 480,
+          "genre": "sports",
+          "score": 53
+        },
+        {
+          "program_id": "ArenaSport2_2",
+          "start": 480,
+          "end": 510,
+          "genre": "sports",
+          "score": 93
+        },
+        {
+          "program_id": "ArenaSport2_3",
+          "start": 510,
+          "end": 540,
+          "genre": "sports",
+          "score": 80
+        },
+        {
+          "program_id": "ArenaSport2_4",
+          "start": 540,
+          "end": 570,
+          "genre": "sports",
+          "score": 84
+        },
+        {
+          "program_id": "ArenaSport2_5",
+          "start": 570,
+          "end": 630,
+          "genre": "sports",
+          "score": 89
+        },
+        {
+          "program_id": "ArenaSport2_6",
+          "start": 630,
+          "end": 750,
+          "genre": "sports",
+          "score": 51
+        },
+        {
+          "program_id": "ArenaSport2_7",
+          "start": 750,
+          "end": 870,
+          "genre": "sports",
+          "score": 53
+        },
+        {
+          "program_id": "ArenaSport2_8",
+          "start": 870,
+          "end": 990,
+          "genre": "sports",
+          "score": 82
+        },
+        {
+          "program_id": "ArenaSport2_9",
+          "start": 990,
+          "end": 1080,
+          "genre": "sports",
+          "score": 63
+        },
+        {
+          "program_id": "ArenaSport2_10",
+          "start": 1080,
+          "end": 1200,
+          "genre": "sports",
+          "score": 81
+        },
+        {
+          "program_id": "ArenaSport2_11",
+          "start": 1200,
+          "end": 1230,
+          "genre": "sports",
+          "score": 78
+        },
+        {
+          "program_id": "ArenaSport2_12",
+          "start": 1230,
+          "end": 1320,
+          "genre": "sports",
+          "score": 85
+        },
+        {
+          "program_id": "ArenaSport2_13",
+          "start": 1320,
+          "end": 1380,
+          "genre": "sports",
+          "score": 62
+        }
+      ]
+    },
+    {
+      "channel_id": 9,
+      "channel_name": "N1_Hrvatska",
+      "programs": [
+        {
+          "program_id": "N1_Hrvatska_1",
+          "start": 360,
+          "end": 390,
+          "genre": "comedy",
+          "score": 69
+        },
+        {
+          "program_id": "N1_Hrvatska_2",
+          "start": 390,
+          "end": 510,
+          "genre": "sports",
+          "score": 57
+        },
+        {
+          "program_id": "N1_Hrvatska_3",
+          "start": 510,
+          "end": 540,
+          "genre": "documentary",
+          "score": 56
+        },
+        {
+          "program_id": "N1_Hrvatska_4",
+          "start": 540,
+          "end": 600,
+          "genre": "reality",
+          "score": 57
+        },
+        {
+          "program_id": "N1_Hrvatska_5",
+          "start": 600,
+          "end": 660,
+          "genre": "talk",
+          "score": 69
+        },
+        {
+          "program_id": "N1_Hrvatska_6",
+          "start": 660,
+          "end": 780,
+          "genre": "drama",
+          "score": 51
+        },
+        {
+          "program_id": "N1_Hrvatska_7",
+          "start": 780,
+          "end": 870,
+          "genre": "news",
+          "score": 73
+        },
+        {
+          "program_id": "N1_Hrvatska_8",
+          "start": 870,
+          "end": 960,
+          "genre": "movie",
+          "score": 59
+        },
+        {
+          "program_id": "N1_Hrvatska_9",
+          "start": 960,
+          "end": 1020,
+          "genre": "news",
+          "score": 66
+        },
+        {
+          "program_id": "N1_Hrvatska_10",
+          "start": 1020,
+          "end": 1140,
+          "genre": "news",
+          "score": 57
+        },
+        {
+          "program_id": "N1_Hrvatska_11",
+          "start": 1140,
+          "end": 1230,
+          "genre": "documentary",
+          "score": 71
+        },
+        {
+          "program_id": "N1_Hrvatska_12",
+          "start": 1230,
+          "end": 1350,
+          "genre": "music",
+          "score": 78
+        },
+        {
+          "program_id": "N1_Hrvatska_13",
+          "start": 1350,
+          "end": 1380,
+          "genre": "documentary",
+          "score": 59
+        }
+      ]
+    },
+    {
+      "channel_id": 10,
+      "channel_name": "CMC",
+      "programs": [
+        {
+          "program_id": "CMC_1",
+          "start": 360,
+          "end": 390,
+          "genre": "sports",
+          "score": 70
+        },
+        {
+          "program_id": "CMC_2",
+          "start": 390,
+          "end": 420,
+          "genre": "music",
+          "score": 73
+        },
+        {
+          "program_id": "CMC_3",
+          "start": 420,
+          "end": 510,
+          "genre": "sports",
+          "score": 88
+        },
+        {
+          "program_id": "CMC_4",
+          "start": 510,
+          "end": 570,
+          "genre": "movie",
+          "score": 82
+        },
+        {
+          "program_id": "CMC_5",
+          "start": 570,
+          "end": 660,
+          "genre": "news",
+          "score": 99
+        },
+        {
+          "program_id": "CMC_6",
+          "start": 660,
+          "end": 750,
+          "genre": "comedy",
+          "score": 68
+        },
+        {
+          "program_id": "CMC_7",
+          "start": 750,
+          "end": 840,
+          "genre": "sports",
+          "score": 97
+        },
+        {
+          "program_id": "CMC_8",
+          "start": 840,
+          "end": 930,
+          "genre": "sports",
+          "score": 83
+        },
+        {
+          "program_id": "CMC_9",
+          "start": 930,
+          "end": 960,
+          "genre": "reality",
+          "score": 90
+        },
+        {
+          "program_id": "CMC_10",
+          "start": 960,
+          "end": 1080,
+          "genre": "comedy",
+          "score": 73
+        },
+        {
+          "program_id": "CMC_11",
+          "start": 1080,
+          "end": 1200,
+          "genre": "sports",
+          "score": 99
+        },
+        {
+          "program_id": "CMC_12",
+          "start": 1200,
+          "end": 1260,
+          "genre": "movie",
+          "score": 43
+        },
+        {
+          "program_id": "CMC_13",
+          "start": 1260,
+          "end": 1290,
+          "genre": "music",
+          "score": 61
+        },
+        {
+          "program_id": "CMC_14",
+          "start": 1290,
+          "end": 1380,
+          "genre": "reality",
+          "score": 86
+        }
+      ]
+    },
+    {
+      "channel_id": 11,
+      "channel_name": "RTL_Life",
+      "programs": [
+        {
+          "program_id": "RTL_Life_1",
+          "start": 360,
+          "end": 420,
+          "genre": "reality",
+          "score": 67
+        },
+        {
+          "program_id": "RTL_Life_2",
+          "start": 420,
+          "end": 450,
+          "genre": "drama",
+          "score": 86
+        },
+        {
+          "program_id": "RTL_Life_3",
+          "start": 450,
+          "end": 510,
+          "genre": "reality",
+          "score": 44
+        },
+        {
+          "program_id": "RTL_Life_4",
+          "start": 510,
+          "end": 630,
+          "genre": "news",
+          "score": 94
+        },
+        {
+          "program_id": "RTL_Life_5",
+          "start": 630,
+          "end": 690,
+          "genre": "movie",
+          "score": 70
+        },
+        {
+          "program_id": "RTL_Life_6",
+          "start": 690,
+          "end": 750,
+          "genre": "news",
+          "score": 96
+        },
+        {
+          "program_id": "RTL_Life_7",
+          "start": 750,
+          "end": 870,
+          "genre": "sports",
+          "score": 93
+        },
+        {
+          "program_id": "RTL_Life_8",
+          "start": 870,
+          "end": 930,
+          "genre": "sports",
+          "score": 84
+        },
+        {
+          "program_id": "RTL_Life_9",
+          "start": 930,
+          "end": 1050,
+          "genre": "sports",
+          "score": 61
+        },
+        {
+          "program_id": "RTL_Life_10",
+          "start": 1050,
+          "end": 1170,
+          "genre": "music",
+          "score": 67
+        },
+        {
+          "program_id": "RTL_Life_11",
+          "start": 1170,
+          "end": 1290,
+          "genre": "sports",
+          "score": 53
+        },
+        {
+          "program_id": "RTL_Life_12",
+          "start": 1290,
+          "end": 1380,
+          "genre": "music",
+          "score": 77
+        }
+      ]
+    },
+    {
+      "channel_id": 12,
+      "channel_name": "DomaTV",
+      "programs": [
+        {
+          "program_id": "DomaTV_1",
+          "start": 360,
+          "end": 420,
+          "genre": "kids",
+          "score": 86
+        },
+        {
+          "program_id": "DomaTV_2",
+          "start": 420,
+          "end": 480,
+          "genre": "movie",
+          "score": 40
+        },
+        {
+          "program_id": "DomaTV_3",
+          "start": 480,
+          "end": 600,
+          "genre": "movie",
+          "score": 63
+        },
+        {
+          "program_id": "DomaTV_4",
+          "start": 600,
+          "end": 660,
+          "genre": "talk",
+          "score": 66
+        },
+        {
+          "program_id": "DomaTV_5",
+          "start": 660,
+          "end": 690,
+          "genre": "news",
+          "score": 98
+        },
+        {
+          "program_id": "DomaTV_6",
+          "start": 690,
+          "end": 720,
+          "genre": "reality",
+          "score": 58
+        },
+        {
+          "program_id": "DomaTV_7",
+          "start": 720,
+          "end": 840,
+          "genre": "music",
+          "score": 63
+        },
+        {
+          "program_id": "DomaTV_8",
+          "start": 840,
+          "end": 960,
+          "genre": "sports",
+          "score": 90
+        },
+        {
+          "program_id": "DomaTV_9",
+          "start": 960,
+          "end": 1080,
+          "genre": "movie",
+          "score": 61
+        },
+        {
+          "program_id": "DomaTV_10",
+          "start": 1080,
+          "end": 1140,
+          "genre": "music",
+          "score": 74
+        },
+        {
+          "program_id": "DomaTV_11",
+          "start": 1140,
+          "end": 1260,
+          "genre": "drama",
+          "score": 52
+        },
+        {
+          "program_id": "DomaTV_12",
+          "start": 1260,
+          "end": 1290,
+          "genre": "sports",
+          "score": 67
+        },
+        {
+          "program_id": "DomaTV_13",
+          "start": 1290,
+          "end": 1380,
+          "genre": "kids",
+          "score": 62
+        }
+      ]
+    },
+    {
+      "channel_id": 13,
+      "channel_name": "Oxygen",
+      "programs": [
+        {
+          "program_id": "Oxygen_1",
+          "start": 360,
+          "end": 390,
+          "genre": "talk",
+          "score": 91
+        },
+        {
+          "program_id": "Oxygen_2",
+          "start": 390,
+          "end": 510,
+          "genre": "news",
+          "score": 47
+        },
+        {
+          "program_id": "Oxygen_3",
+          "start": 510,
+          "end": 570,
+          "genre": "reality",
+          "score": 69
+        },
+        {
+          "program_id": "Oxygen_4",
+          "start": 570,
+          "end": 630,
+          "genre": "sports",
+          "score": 68
+        },
+        {
+          "program_id": "Oxygen_5",
+          "start": 630,
+          "end": 720,
+          "genre": "movie",
+          "score": 90
+        },
+        {
+          "program_id": "Oxygen_6",
+          "start": 720,
+          "end": 840,
+          "genre": "reality",
+          "score": 79
+        },
+        {
+          "program_id": "Oxygen_7",
+          "start": 840,
+          "end": 870,
+          "genre": "news",
+          "score": 92
+        },
+        {
+          "program_id": "Oxygen_8",
+          "start": 870,
+          "end": 990,
+          "genre": "sports",
+          "score": 58
+        },
+        {
+          "program_id": "Oxygen_9",
+          "start": 990,
+          "end": 1050,
+          "genre": "reality",
+          "score": 74
+        },
+        {
+          "program_id": "Oxygen_10",
+          "start": 1050,
+          "end": 1110,
+          "genre": "sports",
+          "score": 58
+        },
+        {
+          "program_id": "Oxygen_11",
+          "start": 1110,
+          "end": 1140,
+          "genre": "comedy",
+          "score": 100
+        },
+        {
+          "program_id": "Oxygen_12",
+          "start": 1140,
+          "end": 1260,
+          "genre": "comedy",
+          "score": 56
+        },
+        {
+          "program_id": "Oxygen_13",
+          "start": 1260,
+          "end": 1350,
+          "genre": "music",
+          "score": 71
+        },
+        {
+          "program_id": "Oxygen_14",
+          "start": 1350,
+          "end": 1380,
+          "genre": "drama",
+          "score": 53
+        }
+      ]
+    },
+    {
+      "channel_id": 14,
+      "channel_name": "HBO_Adria",
+      "programs": [
+        {
+          "program_id": "HBO_Adria_1",
+          "start": 360,
+          "end": 480,
+          "genre": "news",
+          "score": 77
+        },
+        {
+          "program_id": "HBO_Adria_2",
+          "start": 480,
+          "end": 540,
+          "genre": "movie",
+          "score": 68
+        },
+        {
+          "program_id": "HBO_Adria_3",
+          "start": 540,
+          "end": 600,
+          "genre": "reality",
+          "score": 64
+        },
+        {
+          "program_id": "HBO_Adria_4",
+          "start": 600,
+          "end": 720,
+          "genre": "sports",
+          "score": 79
+        },
+        {
+          "program_id": "HBO_Adria_5",
+          "start": 720,
+          "end": 750,
+          "genre": "drama",
+          "score": 84
+        },
+        {
+          "program_id": "HBO_Adria_6",
+          "start": 750,
+          "end": 780,
+          "genre": "talk",
+          "score": 58
+        },
+        {
+          "program_id": "HBO_Adria_7",
+          "start": 780,
+          "end": 870,
+          "genre": "movie",
+          "score": 43
+        },
+        {
+          "program_id": "HBO_Adria_8",
+          "start": 870,
+          "end": 960,
+          "genre": "comedy",
+          "score": 84
+        },
+        {
+          "program_id": "HBO_Adria_9",
+          "start": 960,
+          "end": 1080,
+          "genre": "drama",
+          "score": 87
+        },
+        {
+          "program_id": "HBO_Adria_10",
+          "start": 1080,
+          "end": 1110,
+          "genre": "music",
+          "score": 79
+        },
+        {
+          "program_id": "HBO_Adria_11",
+          "start": 1110,
+          "end": 1140,
+          "genre": "sports",
+          "score": 55
+        },
+        {
+          "program_id": "HBO_Adria_12",
+          "start": 1140,
+          "end": 1170,
+          "genre": "sports",
+          "score": 93
+        },
+        {
+          "program_id": "HBO_Adria_13",
+          "start": 1170,
+          "end": 1290,
+          "genre": "sports",
+          "score": 70
+        },
+        {
+          "program_id": "HBO_Adria_14",
+          "start": 1290,
+          "end": 1350,
+          "genre": "music",
+          "score": 81
+        },
+        {
+          "program_id": "HBO_Adria_15",
+          "start": 1350,
+          "end": 1380,
+          "genre": "reality",
+          "score": 58
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+    "scheduled_programs": [
+        {
+            "program_id": "KTV_1",
+            "channel_id": 2,
+            "start": 420,
+            "end": 480
+        },
+        {
+            "program_id": "RTK1_2",
+            "channel_id": 0,
+            "start": 480,
+            "end": 540
+        },
+        {
+            "program_id": "RTK1_3",
+            "channel_id": 0,
+            "start": 540,
+            "end": 600
+        },
+        {
+            "program_id": "KlanKosova_5",
+            "channel_id": 3,
+            "start": 600,
+            "end": 720
+        },
+        {
+            "program_id": "KlanKosova_6",
+            "channel_id": 3,
+            "start": 720,
+            "end": 750
+        },
+        {
+            "program_id": "KlanKosova_7",
+            "channel_id": 3,
+            "start": 750,
+            "end": 840
+        },
+        {
+            "program_id": "KlanKosova_8",
+            "channel_id": 3,
+            "start": 840,
+            "end": 930
+        },
+        {
+            "program_id": "KlanKosova_9",
+            "channel_id": 3,
+            "start": 930,
+            "end": 1020
+        },
+        {
+            "program_id": "Rubikon_9",
+            "channel_id": 7,
+            "start": 1020,
+            "end": 1050
+        },
+        {
+            "program_id": "RTK2_8",
+            "channel_id": 1,
+            "start": 1050,
+            "end": 1140
+        },
+        {
+            "program_id": "RTV21_11",
+            "channel_id": 5,
+            "start": 1140,
+            "end": 1230
+        },
+        {
+            "program_id": "RTV21_12",
+            "channel_id": 5,
+            "start": 1230,
+            "end": 1320
+        },
+        {
+            "program_id": "KlanKosova_15",
+            "channel_id": 3,
+            "start": 1320,
+            "end": 1380
+        }
+    ]
+}

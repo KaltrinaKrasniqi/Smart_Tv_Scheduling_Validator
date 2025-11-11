@@ -1,0 +1,88 @@
+{
+    "scheduled_programs": [
+        {
+            "program_id": "HBO_Adria_1",
+            "channel_id": 14,
+            "start": 360,
+            "end": 480
+        },
+        {
+            "program_id": "NovaTV_4",
+            "channel_id": 3,
+            "start": 480,
+            "end": 600
+        },
+        {
+            "program_id": "N1_Hrvatska_5",
+            "channel_id": 9,
+            "start": 600,
+            "end": 660
+        },
+        {
+            "program_id": "DomaTV_5",
+            "channel_id": 12,
+            "start": 660,
+            "end": 690
+        },
+        {
+            "program_id": "HRT1_5",
+            "channel_id": 0,
+            "start": 690,
+            "end": 810
+        },
+        {
+            "program_id": "HRT2_10",
+            "channel_id": 1,
+            "start": 810,
+            "end": 870
+        },
+        {
+            "program_id": "NovaTV_9",
+            "channel_id": 3,
+            "start": 870,
+            "end": 930
+        },
+        {
+            "program_id": "SportKlub1_7",
+            "channel_id": 5,
+            "start": 930,
+            "end": 1020
+        },
+        {
+            "program_id": "NovaTV_11",
+            "channel_id": 3,
+            "start": 1020,
+            "end": 1050
+        },
+        {
+            "program_id": "HRT2_13",
+            "channel_id": 1,
+            "start": 1050,
+            "end": 1110
+        },
+        {
+            "program_id": "Oxygen_11",
+            "channel_id": 13,
+            "start": 1110,
+            "end": 1140
+        },
+        {
+            "program_id": "HRT2_15",
+            "channel_id": 1,
+            "start": 1170,
+            "end": 1230
+        },
+        {
+            "program_id": "N1_Hrvatska_12",
+            "channel_id": 9,
+            "start": 1230,
+            "end": 1350
+        },
+        {
+            "program_id": "HRT1_13",
+            "channel_id": 0,
+            "start": 1350,
+            "end": 1380
+        }
+    ]
+}

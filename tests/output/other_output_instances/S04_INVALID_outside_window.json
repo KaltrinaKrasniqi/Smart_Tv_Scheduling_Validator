@@ -1,0 +1,10 @@
+{
+  "scheduled_programs": [
+    {
+      "program_id": "RTK1_1",
+      "channel_id": 0,
+      "start": 410,
+      "end": 480
+    }
+  ]
+}

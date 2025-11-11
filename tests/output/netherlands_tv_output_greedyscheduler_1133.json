@@ -1,0 +1,82 @@
+{
+    "scheduled_programs": [
+        {
+            "program_id": "RTL5_1",
+            "channel_id": 4,
+            "start": 360,
+            "end": 390
+        },
+        {
+            "program_id": "NPO1_2",
+            "channel_id": 0,
+            "start": 390,
+            "end": 480
+        },
+        {
+            "program_id": "Net5_2",
+            "channel_id": 7,
+            "start": 480,
+            "end": 600
+        },
+        {
+            "program_id": "NPO1_4",
+            "channel_id": 0,
+            "start": 600,
+            "end": 690
+        },
+        {
+            "program_id": "RTL5_5",
+            "channel_id": 4,
+            "start": 690,
+            "end": 720
+        },
+        {
+            "program_id": "NPO2_7",
+            "channel_id": 1,
+            "start": 720,
+            "end": 810
+        },
+        {
+            "program_id": "NPO1_7",
+            "channel_id": 0,
+            "start": 840,
+            "end": 960
+        },
+        {
+            "program_id": "Net5_10",
+            "channel_id": 7,
+            "start": 960,
+            "end": 1020
+        },
+        {
+            "program_id": "NPO1_10",
+            "channel_id": 0,
+            "start": 1020,
+            "end": 1110
+        },
+        {
+            "program_id": "NPO1_11",
+            "channel_id": 0,
+            "start": 1110,
+            "end": 1200
+        },
+        {
+            "program_id": "NPO1_12",
+            "channel_id": 0,
+            "start": 1200,
+            "end": 1320
+        },
+        {
+            "program_id": "NPO1_13",
+            "channel_id": 0,
+            "start": 1320,
+            "end": 1350
+        },
+        {
+            "program_id": "NPO1_14",
+            "channel_id": 0,
+            "start": 1350,
+            "end": 1440
+        }
+    ]
+}

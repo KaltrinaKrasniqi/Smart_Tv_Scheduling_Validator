@@ -1,0 +1,22 @@
+{
+  "scheduled_programs": [
+    {
+      "program_id": "KlanKosova_6",
+      "channel_id": 3,
+      "start": 720,
+      "end": 750
+    },
+    {
+      "program_id": "KlanKosova_7",
+      "channel_id": 3,
+      "start": 750,
+      "end": 840
+    },
+    {
+      "program_id": "ABCNews_5",
+      "channel_id": 8,
+      "start": 780,
+      "end": 900
+    }
+  ]
+}

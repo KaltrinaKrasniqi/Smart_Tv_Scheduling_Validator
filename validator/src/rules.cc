@@ -6,8 +6,6 @@
 #include <unordered_set>
 #include <iostream>
 
-
-
 using nlohmann::json;
 namespace tvv {
 
@@ -139,25 +137,64 @@ EvalOutput evaluate(const Instance& ins,
   logv("=== EVALUATE START ===");
   logv("Items: " + std::to_string(sorted_tl.size()));
 
+  std::unordered_map<std::string, ProgramStats> stats;
+  const int D = ins.min_duration;
+
+  for (const auto& item : sorted_tl) {
+    auto itp = ins.program_by_id.find(item.program_id);
+    if (itp == ins.program_by_id.end()) continue;
+    const Program* p = itp->second;
+
+    auto& ps = stats[item.program_id];
+    if (ps.full_length == 0) {
+      ps.full_length = p->end - p->start;
+      ps.genre = p->genre;
+      ps.pref_overlap.assign(ins.time_prefs.size(), 0);
+    }
+
+    int scheduled_minutes = item.end - item.start;
+
+    if (ps.full_length >= D && scheduled_minutes >= D)
+      ps.has_long_segment = true;
+
+    if (ps.full_length <  D && scheduled_minutes == ps.full_length)
+      ps.has_full_short = true;
+
+    if (item.end >= p->end)
+      ps.reached_end = true;
+
+
+    for (size_t j = 0; j < ins.time_prefs.size(); ++j) {
+      const auto& pref = ins.time_prefs[j];
+      if (!pref.preferred_genre.empty() && ps.genre == pref.preferred_genre) {
+        int overlap_start = std::max(item.start, pref.start);
+        int overlap_end   = std::min(item.end,   pref.end);
+        int overlap_len   = std::max(0, overlap_end - overlap_start);
+        if (overlap_len > ps.pref_overlap[j]) ps.pref_overlap[j] = overlap_len;
+      }
+    }
+  }
 
   // Base points
   int base_sum = 0;
-  for (const auto& t : sorted_tl) {
-    auto itp = ins.program_by_id.find(t.program_id);
-    if (itp != ins.program_by_id.end()){
+  for (const auto& [program_id, ps] : stats) {
+    bool eligible = (ps.full_length >= D) ? ps.has_long_segment : ps.has_full_short;
+    if (!eligible) continue;
+
+    auto itp = ins.program_by_id.find(program_id);
+    if (itp != ins.program_by_id.end()) {
       base_sum += itp->second->score;
-      logv(" + base: " + t.program_id + " → " + std::to_string(itp->second->score));
-  }else{
-    logv(" ! base: " + t.program_id + " not in instance");
+      logv(" + base: " + program_id + " → " + std::to_string(itp->second->score));
+    } else {
+      logv(" ! base: " + program_id + " not in instance");
+    }
   }
-}
   out.base = base_sum;
   logv("Base total = " + std::to_string(out.base));
 
 // Bonus points  (must have at least D minutes inside preferred interval)
 
 int bonus_sum = 0;
-const int D = ins.min_duration;
 
 for (const auto& t : sorted_tl) {
   if (t.genre.empty()) continue;
@@ -187,7 +224,7 @@ for (const auto& t : sorted_tl) {
 out.bonuses = bonus_sum;
 logv("Bonus total = " + std::to_string(out.bonuses));
 
-  // Switch penalty
+// Switch penalty
   int switches = 0;
   for (size_t i = 1; i < sorted_tl.size(); ++i) {
     if (sorted_tl[i].channel_id != sorted_tl[i-1].channel_id) {
@@ -204,22 +241,35 @@ logv("Bonus total = " + std::to_string(out.bonuses));
        " penalty=" + std::to_string(switches_pen));
 
   // T penalty for early/late termination
-  int delay_count = 0; 
-  int early_count = 0; 
-  for (const auto& t : sorted_tl) {
-    auto itp = ins.program_by_id.find(t.program_id);
+  int late_start_count = 0;
+  int early_end_count  = 0;
+
+  for (const auto& item : sorted_tl) {
+    auto itp = ins.program_by_id.find(item.program_id);
     if (itp == ins.program_by_id.end()) continue;
-    const Program* P = itp->second;
-    if (t.start > P->start) delay_count += 1;
-    if (t.end   < P->end)   early_count += 1;
+    const Program* p = itp->second;
+    if (item.start > p->start) {
+      late_start_count++;
+      logv("[LATE] " + item.program_id + " started at " + std::to_string(item.start) +
+           " > scheduled " + std::to_string(p->start));
+    }
   }
-  out.late  = delay_count;
-  out.early = early_count;
-  const int early_late_pen = (delay_count + early_count) * ins.T;
-    logv("Early=" + std::to_string(out.early) + " Late=" + std::to_string(out.late) +
+
+  for (const auto& [program_id, ps] : stats) {
+    if (!ps.reached_end) {
+      early_end_count++;
+      logv("[EARLY] penalized: " + program_id + " (no airing reached its end)");
+    } else {
+      logv("[EARLY] waived: " + program_id + " (at least one airing reached the end)");
+    }
+  }
+
+  out.late  = late_start_count;
+  out.early = early_end_count;
+  const int early_late_pen = (late_start_count + early_end_count) * ins.T;
+  logv("Early=" + std::to_string(out.early) + " Late=" + std::to_string(out.late) +
        " T=" + std::to_string(ins.T) +
        " penalty=" + std::to_string(early_late_pen));
-
 
   out.timeline = sorted_tl;        
   out.total = out.base + out.bonuses - switches_pen - early_late_pen;

@@ -1,0 +1,1399 @@
+{
+  "opening_time": 360,
+  "closing_time": 1440,
+  "min_duration": 30,
+  "max_consecutive_genre": 2,
+  "channels_count": 12,
+  "switch_penalty": 8,
+  "termination_penalty": 16,
+  "priority_blocks": [
+    {
+      "start": 720,
+      "end": 780,
+      "allowed_channels": [
+        0,
+        1
+      ]
+    },
+    {
+      "start": 1200,
+      "end": 1320,
+      "allowed_channels": [
+        0,
+        3
+      ]
+    }
+  ],
+  "time_preferences": [
+    {
+      "start": 360,
+      "end": 540,
+      "preferred_genre": "news",
+      "bonus": 25
+    },
+    {
+      "start": 540,
+      "end": 720,
+      "preferred_genre": "talk",
+      "bonus": 15
+    },
+    {
+      "start": 720,
+      "end": 900,
+      "preferred_genre": "drama",
+      "bonus": 30
+    },
+    {
+      "start": 900,
+      "end": 1140,
+      "preferred_genre": "reality",
+      "bonus": 20
+    },
+    {
+      "start": 1140,
+      "end": 1320,
+      "preferred_genre": "movie",
+      "bonus": 40
+    },
+    {
+      "start": 1320,
+      "end": 1440,
+      "preferred_genre": "music",
+      "bonus": 10
+    }
+  ],
+  "channels": [
+    {
+      "channel_id": 0,
+      "channel_name": "NPO1",
+      "programs": [
+        {
+          "program_id": "NPO1_1",
+          "start": 360,
+          "end": 390,
+          "genre": "kids",
+          "score": 93
+        },
+        {
+          "program_id": "NPO1_2",
+          "start": 390,
+          "end": 480,
+          "genre": "news",
+          "score": 92
+        },
+        {
+          "program_id": "NPO1_3",
+          "start": 480,
+          "end": 600,
+          "genre": "news",
+          "score": 76
+        },
+        {
+          "program_id": "NPO1_4",
+          "start": 600,
+          "end": 690,
+          "genre": "drama",
+          "score": 80
+        },
+        {
+          "program_id": "NPO1_5",
+          "start": 690,
+          "end": 780,
+          "genre": "documentary",
+          "score": 67
+        },
+        {
+          "program_id": "NPO1_6",
+          "start": 780,
+          "end": 840,
+          "genre": "drama",
+          "score": 55
+        },
+        {
+          "program_id": "NPO1_7",
+          "start": 840,
+          "end": 960,
+          "genre": "music",
+          "score": 99
+        },
+        {
+          "program_id": "NPO1_8",
+          "start": 960,
+          "end": 990,
+          "genre": "sports",
+          "score": 89
+        },
+        {
+          "program_id": "NPO1_9",
+          "start": 990,
+          "end": 1020,
+          "genre": "comedy",
+          "score": 49
+        },
+        {
+          "program_id": "NPO1_10",
+          "start": 1020,
+          "end": 1110,
+          "genre": "comedy",
+          "score": 91
+        },
+        {
+          "program_id": "NPO1_11",
+          "start": 1110,
+          "end": 1200,
+          "genre": "movie",
+          "score": 61
+        },
+        {
+          "program_id": "NPO1_12",
+          "start": 1200,
+          "end": 1320,
+          "genre": "news",
+          "score": 61
+        },
+        {
+          "program_id": "NPO1_13",
+          "start": 1320,
+          "end": 1350,
+          "genre": "news",
+          "score": 86
+        },
+        {
+          "program_id": "NPO1_14",
+          "start": 1350,
+          "end": 1440,
+          "genre": "movie",
+          "score": 99
+        }
+      ]
+    },
+    {
+      "channel_id": 1,
+      "channel_name": "NPO2",
+      "programs": [
+        {
+          "program_id": "NPO2_1",
+          "start": 360,
+          "end": 390,
+          "genre": "sports",
+          "score": 41
+        },
+        {
+          "program_id": "NPO2_2",
+          "start": 390,
+          "end": 450,
+          "genre": "kids",
+          "score": 83
+        },
+        {
+          "program_id": "NPO2_3",
+          "start": 450,
+          "end": 480,
+          "genre": "kids",
+          "score": 50
+        },
+        {
+          "program_id": "NPO2_4",
+          "start": 480,
+          "end": 510,
+          "genre": "movie",
+          "score": 84
+        },
+        {
+          "program_id": "NPO2_5",
+          "start": 510,
+          "end": 600,
+          "genre": "talk",
+          "score": 57
+        },
+        {
+          "program_id": "NPO2_6",
+          "start": 600,
+          "end": 720,
+          "genre": "comedy",
+          "score": 72
+        },
+        {
+          "program_id": "NPO2_7",
+          "start": 720,
+          "end": 810,
+          "genre": "music",
+          "score": 61
+        },
+        {
+          "program_id": "NPO2_8",
+          "start": 810,
+          "end": 840,
+          "genre": "documentary",
+          "score": 56
+        },
+        {
+          "program_id": "NPO2_9",
+          "start": 840,
+          "end": 870,
+          "genre": "kids",
+          "score": 86
+        },
+        {
+          "program_id": "NPO2_10",
+          "start": 870,
+          "end": 900,
+          "genre": "movie",
+          "score": 65
+        },
+        {
+          "program_id": "NPO2_11",
+          "start": 900,
+          "end": 990,
+          "genre": "news",
+          "score": 57
+        },
+        {
+          "program_id": "NPO2_12",
+          "start": 990,
+          "end": 1110,
+          "genre": "kids",
+          "score": 92
+        },
+        {
+          "program_id": "NPO2_13",
+          "start": 1110,
+          "end": 1200,
+          "genre": "comedy",
+          "score": 94
+        },
+        {
+          "program_id": "NPO2_14",
+          "start": 1200,
+          "end": 1260,
+          "genre": "drama",
+          "score": 70
+        },
+        {
+          "program_id": "NPO2_15",
+          "start": 1260,
+          "end": 1290,
+          "genre": "news",
+          "score": 45
+        },
+        {
+          "program_id": "NPO2_16",
+          "start": 1290,
+          "end": 1320,
+          "genre": "sports",
+          "score": 49
+        },
+        {
+          "program_id": "NPO2_17",
+          "start": 1320,
+          "end": 1350,
+          "genre": "kids",
+          "score": 65
+        },
+        {
+          "program_id": "NPO2_18",
+          "start": 1350,
+          "end": 1380,
+          "genre": "comedy",
+          "score": 96
+        },
+        {
+          "program_id": "NPO2_19",
+          "start": 1380,
+          "end": 1440,
+          "genre": "comedy",
+          "score": 79
+        }
+      ]
+    },
+    {
+      "channel_id": 2,
+      "channel_name": "NPO3",
+      "programs": [
+        {
+          "program_id": "NPO3_1",
+          "start": 360,
+          "end": 390,
+          "genre": "kids",
+          "score": 66
+        },
+        {
+          "program_id": "NPO3_2",
+          "start": 390,
+          "end": 420,
+          "genre": "news",
+          "score": 41
+        },
+        {
+          "program_id": "NPO3_3",
+          "start": 420,
+          "end": 450,
+          "genre": "sports",
+          "score": 75
+        },
+        {
+          "program_id": "NPO3_4",
+          "start": 450,
+          "end": 540,
+          "genre": "news",
+          "score": 92
+        },
+        {
+          "program_id": "NPO3_5",
+          "start": 540,
+          "end": 570,
+          "genre": "comedy",
+          "score": 54
+        },
+        {
+          "program_id": "NPO3_6",
+          "start": 570,
+          "end": 630,
+          "genre": "news",
+          "score": 60
+        },
+        {
+          "program_id": "NPO3_7",
+          "start": 630,
+          "end": 750,
+          "genre": "sports",
+          "score": 97
+        },
+        {
+          "program_id": "NPO3_8",
+          "start": 750,
+          "end": 780,
+          "genre": "news",
+          "score": 93
+        },
+        {
+          "program_id": "NPO3_9",
+          "start": 780,
+          "end": 810,
+          "genre": "comedy",
+          "score": 66
+        },
+        {
+          "program_id": "NPO3_10",
+          "start": 810,
+          "end": 900,
+          "genre": "sports",
+          "score": 67
+        },
+        {
+          "program_id": "NPO3_11",
+          "start": 900,
+          "end": 960,
+          "genre": "kids",
+          "score": 67
+        },
+        {
+          "program_id": "NPO3_12",
+          "start": 960,
+          "end": 1020,
+          "genre": "news",
+          "score": 66
+        },
+        {
+          "program_id": "NPO3_13",
+          "start": 1020,
+          "end": 1140,
+          "genre": "drama",
+          "score": 58
+        },
+        {
+          "program_id": "NPO3_14",
+          "start": 1140,
+          "end": 1170,
+          "genre": "talk",
+          "score": 48
+        },
+        {
+          "program_id": "NPO3_15",
+          "start": 1170,
+          "end": 1260,
+          "genre": "news",
+          "score": 46
+        },
+        {
+          "program_id": "NPO3_16",
+          "start": 1260,
+          "end": 1350,
+          "genre": "news",
+          "score": 44
+        },
+        {
+          "program_id": "NPO3_17",
+          "start": 1350,
+          "end": 1440,
+          "genre": "sports",
+          "score": 89
+        }
+      ]
+    },
+    {
+      "channel_id": 3,
+      "channel_name": "RTL4",
+      "programs": [
+        {
+          "program_id": "RTL4_1",
+          "start": 360,
+          "end": 390,
+          "genre": "sports",
+          "score": 98
+        },
+        {
+          "program_id": "RTL4_2",
+          "start": 390,
+          "end": 450,
+          "genre": "movie",
+          "score": 54
+        },
+        {
+          "program_id": "RTL4_3",
+          "start": 450,
+          "end": 540,
+          "genre": "drama",
+          "score": 98
+        },
+        {
+          "program_id": "RTL4_4",
+          "start": 540,
+          "end": 630,
+          "genre": "comedy",
+          "score": 42
+        },
+        {
+          "program_id": "RTL4_5",
+          "start": 630,
+          "end": 750,
+          "genre": "drama",
+          "score": 92
+        },
+        {
+          "program_id": "RTL4_6",
+          "start": 750,
+          "end": 870,
+          "genre": "sports",
+          "score": 77
+        },
+        {
+          "program_id": "RTL4_7",
+          "start": 870,
+          "end": 930,
+          "genre": "sports",
+          "score": 55
+        },
+        {
+          "program_id": "RTL4_8",
+          "start": 930,
+          "end": 990,
+          "genre": "news",
+          "score": 77
+        },
+        {
+          "program_id": "RTL4_9",
+          "start": 990,
+          "end": 1080,
+          "genre": "kids",
+          "score": 43
+        },
+        {
+          "program_id": "RTL4_10",
+          "start": 1080,
+          "end": 1140,
+          "genre": "movie",
+          "score": 81
+        },
+        {
+          "program_id": "RTL4_11",
+          "start": 1140,
+          "end": 1170,
+          "genre": "drama",
+          "score": 49
+        },
+        {
+          "program_id": "RTL4_12",
+          "start": 1170,
+          "end": 1260,
+          "genre": "comedy",
+          "score": 84
+        },
+        {
+          "program_id": "RTL4_13",
+          "start": 1260,
+          "end": 1350,
+          "genre": "kids",
+          "score": 82
+        },
+        {
+          "program_id": "RTL4_14",
+          "start": 1350,
+          "end": 1440,
+          "genre": "news",
+          "score": 46
+        }
+      ]
+    },
+    {
+      "channel_id": 4,
+      "channel_name": "RTL5",
+      "programs": [
+        {
+          "program_id": "RTL5_1",
+          "start": 360,
+          "end": 390,
+          "genre": "news",
+          "score": 94
+        },
+        {
+          "program_id": "RTL5_2",
+          "start": 390,
+          "end": 510,
+          "genre": "kids",
+          "score": 43
+        },
+        {
+          "program_id": "RTL5_3",
+          "start": 510,
+          "end": 570,
+          "genre": "talk",
+          "score": 77
+        },
+        {
+          "program_id": "RTL5_4",
+          "start": 570,
+          "end": 690,
+          "genre": "drama",
+          "score": 71
+        },
+        {
+          "program_id": "RTL5_5",
+          "start": 690,
+          "end": 720,
+          "genre": "movie",
+          "score": 92
+        },
+        {
+          "program_id": "RTL5_6",
+          "start": 720,
+          "end": 780,
+          "genre": "drama",
+          "score": 57
+        },
+        {
+          "program_id": "RTL5_7",
+          "start": 780,
+          "end": 870,
+          "genre": "news",
+          "score": 73
+        },
+        {
+          "program_id": "RTL5_8",
+          "start": 870,
+          "end": 930,
+          "genre": "kids",
+          "score": 77
+        },
+        {
+          "program_id": "RTL5_9",
+          "start": 930,
+          "end": 1020,
+          "genre": "sports",
+          "score": 86
+        },
+        {
+          "program_id": "RTL5_10",
+          "start": 1020,
+          "end": 1140,
+          "genre": "comedy",
+          "score": 74
+        },
+        {
+          "program_id": "RTL5_11",
+          "start": 1140,
+          "end": 1260,
+          "genre": "movie",
+          "score": 70
+        },
+        {
+          "program_id": "RTL5_12",
+          "start": 1260,
+          "end": 1320,
+          "genre": "news",
+          "score": 71
+        },
+        {
+          "program_id": "RTL5_13",
+          "start": 1320,
+          "end": 1350,
+          "genre": "talk",
+          "score": 50
+        },
+        {
+          "program_id": "RTL5_14",
+          "start": 1350,
+          "end": 1440,
+          "genre": "comedy",
+          "score": 73
+        }
+      ]
+    },
+    {
+      "channel_id": 5,
+      "channel_name": "RTL7",
+      "programs": [
+        {
+          "program_id": "RTL7_1",
+          "start": 360,
+          "end": 450,
+          "genre": "comedy",
+          "score": 45
+        },
+        {
+          "program_id": "RTL7_2",
+          "start": 450,
+          "end": 480,
+          "genre": "news",
+          "score": 54
+        },
+        {
+          "program_id": "RTL7_3",
+          "start": 480,
+          "end": 600,
+          "genre": "movie",
+          "score": 46
+        },
+        {
+          "program_id": "RTL7_4",
+          "start": 600,
+          "end": 660,
+          "genre": "comedy",
+          "score": 56
+        },
+        {
+          "program_id": "RTL7_5",
+          "start": 660,
+          "end": 720,
+          "genre": "talk",
+          "score": 55
+        },
+        {
+          "program_id": "RTL7_6",
+          "start": 720,
+          "end": 780,
+          "genre": "sports",
+          "score": 85
+        },
+        {
+          "program_id": "RTL7_7",
+          "start": 780,
+          "end": 840,
+          "genre": "drama",
+          "score": 97
+        },
+        {
+          "program_id": "RTL7_8",
+          "start": 840,
+          "end": 960,
+          "genre": "talk",
+          "score": 94
+        },
+        {
+          "program_id": "RTL7_9",
+          "start": 960,
+          "end": 1080,
+          "genre": "sports",
+          "score": 85
+        },
+        {
+          "program_id": "RTL7_10",
+          "start": 1080,
+          "end": 1110,
+          "genre": "drama",
+          "score": 51
+        },
+        {
+          "program_id": "RTL7_11",
+          "start": 1110,
+          "end": 1170,
+          "genre": "documentary",
+          "score": 86
+        },
+        {
+          "program_id": "RTL7_12",
+          "start": 1170,
+          "end": 1260,
+          "genre": "talk",
+          "score": 93
+        },
+        {
+          "program_id": "RTL7_13",
+          "start": 1260,
+          "end": 1350,
+          "genre": "movie",
+          "score": 65
+        },
+        {
+          "program_id": "RTL7_14",
+          "start": 1350,
+          "end": 1440,
+          "genre": "reality",
+          "score": 54
+        }
+      ]
+    },
+    {
+      "channel_id": 6,
+      "channel_name": "SBS6",
+      "programs": [
+        {
+          "program_id": "SBS6_1",
+          "start": 360,
+          "end": 450,
+          "genre": "kids",
+          "score": 66
+        },
+        {
+          "program_id": "SBS6_2",
+          "start": 450,
+          "end": 570,
+          "genre": "movie",
+          "score": 53
+        },
+        {
+          "program_id": "SBS6_3",
+          "start": 570,
+          "end": 600,
+          "genre": "news",
+          "score": 67
+        },
+        {
+          "program_id": "SBS6_4",
+          "start": 600,
+          "end": 660,
+          "genre": "news",
+          "score": 40
+        },
+        {
+          "program_id": "SBS6_5",
+          "start": 660,
+          "end": 780,
+          "genre": "drama",
+          "score": 57
+        },
+        {
+          "program_id": "SBS6_6",
+          "start": 780,
+          "end": 810,
+          "genre": "kids",
+          "score": 79
+        },
+        {
+          "program_id": "SBS6_7",
+          "start": 810,
+          "end": 900,
+          "genre": "kids",
+          "score": 45
+        },
+        {
+          "program_id": "SBS6_8",
+          "start": 900,
+          "end": 1020,
+          "genre": "talk",
+          "score": 79
+        },
+        {
+          "program_id": "SBS6_9",
+          "start": 1020,
+          "end": 1080,
+          "genre": "kids",
+          "score": 63
+        },
+        {
+          "program_id": "SBS6_10",
+          "start": 1080,
+          "end": 1200,
+          "genre": "kids",
+          "score": 82
+        },
+        {
+          "program_id": "SBS6_11",
+          "start": 1200,
+          "end": 1290,
+          "genre": "music",
+          "score": 71
+        },
+        {
+          "program_id": "SBS6_12",
+          "start": 1290,
+          "end": 1320,
+          "genre": "news",
+          "score": 50
+        },
+        {
+          "program_id": "SBS6_13",
+          "start": 1320,
+          "end": 1440,
+          "genre": "sports",
+          "score": 40
+        }
+      ]
+    },
+    {
+      "channel_id": 7,
+      "channel_name": "Net5",
+      "programs": [
+        {
+          "program_id": "Net5_1",
+          "start": 360,
+          "end": 480,
+          "genre": "documentary",
+          "score": 50
+        },
+        {
+          "program_id": "Net5_2",
+          "start": 480,
+          "end": 600,
+          "genre": "music",
+          "score": 91
+        },
+        {
+          "program_id": "Net5_3",
+          "start": 600,
+          "end": 630,
+          "genre": "music",
+          "score": 61
+        },
+        {
+          "program_id": "Net5_4",
+          "start": 630,
+          "end": 660,
+          "genre": "news",
+          "score": 95
+        },
+        {
+          "program_id": "Net5_5",
+          "start": 660,
+          "end": 780,
+          "genre": "movie",
+          "score": 71
+        },
+        {
+          "program_id": "Net5_6",
+          "start": 780,
+          "end": 810,
+          "genre": "movie",
+          "score": 52
+        },
+        {
+          "program_id": "Net5_7",
+          "start": 810,
+          "end": 840,
+          "genre": "talk",
+          "score": 64
+        },
+        {
+          "program_id": "Net5_8",
+          "start": 840,
+          "end": 930,
+          "genre": "kids",
+          "score": 98
+        },
+        {
+          "program_id": "Net5_9",
+          "start": 930,
+          "end": 960,
+          "genre": "comedy",
+          "score": 90
+        },
+        {
+          "program_id": "Net5_10",
+          "start": 960,
+          "end": 1020,
+          "genre": "documentary",
+          "score": 100
+        },
+        {
+          "program_id": "Net5_11",
+          "start": 1020,
+          "end": 1110,
+          "genre": "news",
+          "score": 74
+        },
+        {
+          "program_id": "Net5_12",
+          "start": 1110,
+          "end": 1140,
+          "genre": "news",
+          "score": 82
+        },
+        {
+          "program_id": "Net5_13",
+          "start": 1140,
+          "end": 1170,
+          "genre": "sports",
+          "score": 73
+        },
+        {
+          "program_id": "Net5_14",
+          "start": 1170,
+          "end": 1230,
+          "genre": "music",
+          "score": 47
+        },
+        {
+          "program_id": "Net5_15",
+          "start": 1230,
+          "end": 1260,
+          "genre": "talk",
+          "score": 81
+        },
+        {
+          "program_id": "Net5_16",
+          "start": 1260,
+          "end": 1350,
+          "genre": "talk",
+          "score": 55
+        },
+        {
+          "program_id": "Net5_17",
+          "start": 1350,
+          "end": 1440,
+          "genre": "movie",
+          "score": 99
+        }
+      ]
+    },
+    {
+      "channel_id": 8,
+      "channel_name": "Veronica",
+      "programs": [
+        {
+          "program_id": "Veronica_1",
+          "start": 360,
+          "end": 450,
+          "genre": "news",
+          "score": 47
+        },
+        {
+          "program_id": "Veronica_2",
+          "start": 450,
+          "end": 570,
+          "genre": "comedy",
+          "score": 43
+        },
+        {
+          "program_id": "Veronica_3",
+          "start": 570,
+          "end": 660,
+          "genre": "news",
+          "score": 94
+        },
+        {
+          "program_id": "Veronica_4",
+          "start": 660,
+          "end": 720,
+          "genre": "news",
+          "score": 40
+        },
+        {
+          "program_id": "Veronica_5",
+          "start": 720,
+          "end": 840,
+          "genre": "kids",
+          "score": 94
+        },
+        {
+          "program_id": "Veronica_6",
+          "start": 840,
+          "end": 900,
+          "genre": "reality",
+          "score": 43
+        },
+        {
+          "program_id": "Veronica_7",
+          "start": 900,
+          "end": 990,
+          "genre": "talk",
+          "score": 59
+        },
+        {
+          "program_id": "Veronica_8",
+          "start": 990,
+          "end": 1110,
+          "genre": "sports",
+          "score": 71
+        },
+        {
+          "program_id": "Veronica_9",
+          "start": 1110,
+          "end": 1230,
+          "genre": "comedy",
+          "score": 66
+        },
+        {
+          "program_id": "Veronica_10",
+          "start": 1230,
+          "end": 1350,
+          "genre": "sports",
+          "score": 51
+        },
+        {
+          "program_id": "Veronica_11",
+          "start": 1350,
+          "end": 1440,
+          "genre": "talk",
+          "score": 84
+        }
+      ]
+    },
+    {
+      "channel_id": 9,
+      "channel_name": "E\u00e9n",
+      "programs": [
+        {
+          "program_id": "E\u00e9n_1",
+          "start": 360,
+          "end": 480,
+          "genre": "sports",
+          "score": 87
+        },
+        {
+          "program_id": "E\u00e9n_2",
+          "start": 480,
+          "end": 540,
+          "genre": "talk",
+          "score": 80
+        },
+        {
+          "program_id": "E\u00e9n_3",
+          "start": 540,
+          "end": 630,
+          "genre": "movie",
+          "score": 72
+        },
+        {
+          "program_id": "E\u00e9n_4",
+          "start": 630,
+          "end": 750,
+          "genre": "sports",
+          "score": 46
+        },
+        {
+          "program_id": "E\u00e9n_5",
+          "start": 750,
+          "end": 780,
+          "genre": "news",
+          "score": 77
+        },
+        {
+          "program_id": "E\u00e9n_6",
+          "start": 780,
+          "end": 840,
+          "genre": "movie",
+          "score": 61
+        },
+        {
+          "program_id": "E\u00e9n_7",
+          "start": 840,
+          "end": 870,
+          "genre": "sports",
+          "score": 68
+        },
+        {
+          "program_id": "E\u00e9n_8",
+          "start": 870,
+          "end": 900,
+          "genre": "movie",
+          "score": 71
+        },
+        {
+          "program_id": "E\u00e9n_9",
+          "start": 900,
+          "end": 990,
+          "genre": "movie",
+          "score": 43
+        },
+        {
+          "program_id": "E\u00e9n_10",
+          "start": 990,
+          "end": 1050,
+          "genre": "talk",
+          "score": 47
+        },
+        {
+          "program_id": "E\u00e9n_11",
+          "start": 1050,
+          "end": 1170,
+          "genre": "comedy",
+          "score": 85
+        },
+        {
+          "program_id": "E\u00e9n_12",
+          "start": 1170,
+          "end": 1230,
+          "genre": "news",
+          "score": 62
+        },
+        {
+          "program_id": "E\u00e9n_13",
+          "start": 1230,
+          "end": 1260,
+          "genre": "news",
+          "score": 76
+        },
+        {
+          "program_id": "E\u00e9n_14",
+          "start": 1260,
+          "end": 1380,
+          "genre": "news",
+          "score": 49
+        },
+        {
+          "program_id": "E\u00e9n_15",
+          "start": 1380,
+          "end": 1440,
+          "genre": "movie",
+          "score": 42
+        }
+      ]
+    },
+    {
+      "channel_id": 10,
+      "channel_name": "Canvas",
+      "programs": [
+        {
+          "program_id": "Canvas_1",
+          "start": 360,
+          "end": 450,
+          "genre": "kids",
+          "score": 85
+        },
+        {
+          "program_id": "Canvas_2",
+          "start": 450,
+          "end": 480,
+          "genre": "reality",
+          "score": 96
+        },
+        {
+          "program_id": "Canvas_3",
+          "start": 480,
+          "end": 570,
+          "genre": "kids",
+          "score": 45
+        },
+        {
+          "program_id": "Canvas_4",
+          "start": 570,
+          "end": 600,
+          "genre": "talk",
+          "score": 53
+        },
+        {
+          "program_id": "Canvas_5",
+          "start": 600,
+          "end": 720,
+          "genre": "movie",
+          "score": 68
+        },
+        {
+          "program_id": "Canvas_6",
+          "start": 720,
+          "end": 810,
+          "genre": "movie",
+          "score": 87
+        },
+        {
+          "program_id": "Canvas_7",
+          "start": 810,
+          "end": 840,
+          "genre": "kids",
+          "score": 66
+        },
+        {
+          "program_id": "Canvas_8",
+          "start": 840,
+          "end": 930,
+          "genre": "news",
+          "score": 44
+        },
+        {
+          "program_id": "Canvas_9",
+          "start": 930,
+          "end": 960,
+          "genre": "kids",
+          "score": 43
+        },
+        {
+          "program_id": "Canvas_10",
+          "start": 960,
+          "end": 990,
+          "genre": "news",
+          "score": 96
+        },
+        {
+          "program_id": "Canvas_11",
+          "start": 990,
+          "end": 1080,
+          "genre": "kids",
+          "score": 60
+        },
+        {
+          "program_id": "Canvas_12",
+          "start": 1080,
+          "end": 1140,
+          "genre": "reality",
+          "score": 85
+        },
+        {
+          "program_id": "Canvas_13",
+          "start": 1140,
+          "end": 1170,
+          "genre": "talk",
+          "score": 99
+        },
+        {
+          "program_id": "Canvas_14",
+          "start": 1170,
+          "end": 1230,
+          "genre": "news",
+          "score": 93
+        },
+        {
+          "program_id": "Canvas_15",
+          "start": 1230,
+          "end": 1260,
+          "genre": "news",
+          "score": 55
+        },
+        {
+          "program_id": "Canvas_16",
+          "start": 1260,
+          "end": 1290,
+          "genre": "kids",
+          "score": 71
+        },
+        {
+          "program_id": "Canvas_17",
+          "start": 1290,
+          "end": 1320,
+          "genre": "sports",
+          "score": 55
+        },
+        {
+          "program_id": "Canvas_18",
+          "start": 1320,
+          "end": 1380,
+          "genre": "kids",
+          "score": 76
+        },
+        {
+          "program_id": "Canvas_19",
+          "start": 1380,
+          "end": 1440,
+          "genre": "documentary",
+          "score": 99
+        }
+      ]
+    },
+    {
+      "channel_id": 11,
+      "channel_name": "Euronews",
+      "programs": [
+        {
+          "program_id": "Euronews_1",
+          "start": 360,
+          "end": 420,
+          "genre": "talk",
+          "score": 95
+        },
+        {
+          "program_id": "Euronews_2",
+          "start": 420,
+          "end": 450,
+          "genre": "sports",
+          "score": 76
+        },
+        {
+          "program_id": "Euronews_3",
+          "start": 450,
+          "end": 540,
+          "genre": "sports",
+          "score": 73
+        },
+        {
+          "program_id": "Euronews_4",
+          "start": 540,
+          "end": 660,
+          "genre": "kids",
+          "score": 47
+        },
+        {
+          "program_id": "Euronews_5",
+          "start": 660,
+          "end": 780,
+          "genre": "news",
+          "score": 77
+        },
+        {
+          "program_id": "Euronews_6",
+          "start": 780,
+          "end": 870,
+          "genre": "kids",
+          "score": 74
+        },
+        {
+          "program_id": "Euronews_7",
+          "start": 870,
+          "end": 990,
+          "genre": "news",
+          "score": 42
+        },
+        {
+          "program_id": "Euronews_8",
+          "start": 990,
+          "end": 1020,
+          "genre": "documentary",
+          "score": 66
+        },
+        {
+          "program_id": "Euronews_9",
+          "start": 1020,
+          "end": 1140,
+          "genre": "talk",
+          "score": 76
+        },
+        {
+          "program_id": "Euronews_10",
+          "start": 1140,
+          "end": 1260,
+          "genre": "reality",
+          "score": 100
+        },
+        {
+          "program_id": "Euronews_11",
+          "start": 1260,
+          "end": 1350,
+          "genre": "kids",
+          "score": 62
+        },
+        {
+          "program_id": "Euronews_12",
+          "start": 1350,
+          "end": 1380,
+          "genre": "drama",
+          "score": 47
+        },
+        {
+          "program_id": "Euronews_13",
+          "start": 1380,
+          "end": 1440,
+          "genre": "comedy",
+          "score": 62
+        }
+      ]
+    }
+  ]
+}

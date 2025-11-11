@@ -1,0 +1,58 @@
+{
+    "scheduled_programs": [
+        {
+            "program_id": "ARD_news_mo",
+            "channel_id": 0,
+            "start": 480,
+            "end": 540
+        },
+        {
+            "program_id": "ARD_morningmag",
+            "channel_id": 0,
+            "start": 540,
+            "end": 600
+        },
+        {
+            "program_id": "ARD_documentary",
+            "channel_id": 0,
+            "start": 600,
+            "end": 660
+        },
+        {
+            "program_id": "ARD_lunch_news",
+            "channel_id": 0,
+            "start": 660,
+            "end": 720
+        },
+        {
+            "program_id": "ARD_afternoonmag",
+            "channel_id": 0,
+            "start": 720,
+            "end": 780
+        },
+        {
+            "program_id": "P7_evening_show",
+            "channel_id": 3,
+            "start": 780,
+            "end": 900
+        },
+        {
+            "program_id": "P7_prime_movie",
+            "channel_id": 3,
+            "start": 900,
+            "end": 1080
+        },
+        {
+            "program_id": "P7_music_playlist",
+            "channel_id": 3,
+            "start": 1200,
+            "end": 1320
+        },
+        {
+            "program_id": "ARD_night_music",
+            "channel_id": 0,
+            "start": 1320,
+            "end": 1380
+        }
+    ]
+}

@@ -1,0 +1,64 @@
+{
+    "scheduled_programs": [
+        {
+            "program_id": "ARD_news_mo",
+            "channel_id": 0,
+            "start": 480,
+            "end": 540
+        },
+        {
+            "program_id": "ARD_morningmag",
+            "channel_id": 0,
+            "start": 540,
+            "end": 600
+        },
+        {
+            "program_id": "ARD_documentary",
+            "channel_id": 0,
+            "start": 600,
+            "end": 660
+        },
+        {
+            "program_id": "ARD_lunch_news",
+            "channel_id": 0,
+            "start": 660,
+            "end": 720
+        },
+        {
+            "program_id": "ARD_afternoonmag",
+            "channel_id": 0,
+            "start": 720,
+            "end": 780
+        },
+        {
+            "program_id": "P7_evening_show",
+            "channel_id": 3,
+            "start": 780,
+            "end": 900
+        },
+        {
+            "program_id": "ZDF_prime_news",
+            "channel_id": 1,
+            "start": 900,
+            "end": 930
+        },
+        {
+            "program_id": "ZDF_ent",
+            "channel_id": 1,
+            "start": 930,
+            "end": 1020
+        },
+        {
+            "program_id": "ZDF_late_movie",
+            "channel_id": 1,
+            "start": 1020,
+            "end": 1240
+        },
+        {
+            "program_id": "ZDF_night_doc",
+            "channel_id": 1,
+            "start": 1240,
+            "end": 1380
+        }
+    ]
+}

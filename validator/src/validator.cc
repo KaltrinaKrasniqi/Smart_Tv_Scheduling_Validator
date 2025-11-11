@@ -103,15 +103,6 @@ Result validate(const std::string& instance_json,
   }
   logv("Instance constraints OK.");
 
- 
-if (!validateProgramAndChannel(jSub, jIns)) {
-    result.status = "ERROR";
-    result.error_message = "Program and channel validation failed.";
-    return result;
-}
-logv("Program->Channel mapping OK.");
-
-
 if (!validateProgramsExistInInput(jIns, jSub)) {
   result.status = "ERROR";
   result.error_message = "Output validation failed.";
@@ -120,6 +111,13 @@ if (!validateProgramsExistInInput(jIns, jSub)) {
 logv("Output reference checks OK.");
 
 
+if (!validateProgramAndChannel(jSub, jIns)) {
+    result.status = "ERROR";
+    result.error_message = "Program and channel validation failed.";
+    return result;
+}
+
+logv("Program->Channel mapping OK.");
 
   Instance ins;
   Submission sub;
@@ -154,44 +152,6 @@ std::vector<Violation> all_violations;
 auto add_violation = [&](Violation v){
   all_violations.push_back(std::move(v));
 };
-
-// SINGLE_SEGMENT_PER_PROGRAM
-{
-  std::unordered_map<std::string, int> count;
-  std::unordered_map<std::string, size_t> first_idx;
-  count.reserve(tl.size());
-  first_idx.reserve(tl.size());
-
-  for (size_t i = 0; i < tl.size(); ++i) {
-    const auto& t = tl[i];
-    auto it = count.find(t.program_id);
-    if (it == count.end()) {
-      count.emplace(t.program_id, 1);
-      first_idx.emplace(t.program_id, i);
-    } else {
-      it->second++;
-    }
-  }
-
-  for (const auto& kv : count) {
-    if (kv.second > 1) {
-      size_t k = first_idx[kv.first];
-      add_violation(Violation{
-        "MULTI_SEGMENT_SAME_PROGRAM",
-        "INVALID: Program '" + tl[k].program_id + "' appears in multiple non-contiguous segments; a single continuous segment is required.",
-        tl[k].start
-      });
-      logv("[VIOL] MULTI_SEGMENT_SAME_PROGRAM for " + tl[k].program_id);
-
-      for (size_t i = 0; i < tl.size(); ++i) {
-        if (tl[i].program_id == kv.first) {
-          valid_mask[i] = 0;
-        }
-      }
-    }
-  }
-}
-
  
 // MIN_CONTIGUOUS_DURATION
 for (size_t i = 0; i < tl.size(); ++i) {
@@ -380,8 +340,6 @@ for (size_t i = 0; i < tl.size(); ++i) {
 }
 
 std::unordered_set<std::string> overlapped_in_input;
-
-
 collectInputOverlapsAsViolations(jIns, all_violations, logv, overlapped_in_input);
 
 for (size_t i = 0; i < tl.size(); ++i) {
