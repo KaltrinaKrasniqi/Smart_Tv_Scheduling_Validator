@@ -69,9 +69,6 @@ Instance parse_instance(const std::string& txt) {
       p.genre = jp.value("genre", std::string{});
       p.score = jp.value("score", 0);
 
-      if (ins.program_by_id.count(p.id))
-        throw std::runtime_error("Duplicate program_id: " + p.id);
-
       ins.program_by_id[p.id] = &p;
     }
 

@@ -28,11 +28,46 @@ export async function initValidator() {
   return { mod, validate_ptr, free_buffer };
 }
 
-export async function validateWithWasm(instanceText: string, submissionText: string, verbose: boolean) {
-  const { mod, validate_ptr, free_buffer } = await initValidator();
-  const ptr: number = validate_ptr(instanceText, submissionText, verbose ? 1 : 0);
-  if (!ptr) throw new Error("native returned null pointer");
-  const json = mod.UTF8ToString(ptr);
-  free_buffer(ptr);
-  return JSON.parse(json);
+export async function validateWithWasm(
+  instanceText: string,
+  submissionText: string,
+  verbose: boolean
+) {
+  const { mod } = await initValidator();
+
+  const validate = mod.cwrap(
+    "validate_json",
+    "number",
+    ["string", "string", "number", "number"]
+  );
+
+  const outLenPtr = mod._malloc(4);
+
+  const resultPtr = validate(
+    instanceText,
+    submissionText,
+    verbose ? 1 : 0,
+    outLenPtr
+  );
+
+  if (!resultPtr) {
+    mod._free(outLenPtr);
+    throw new Error("WASM: validate_json returned null pointer");
+  }
+
+  const len = mod.getValue(outLenPtr, "i32");
+
+  if (len <= 0) {
+    mod._free(resultPtr);
+    mod._free(outLenPtr);
+    throw new Error("WASM: invalid result length");
+  }
+
+  const jsonStr = mod.UTF8ToString(resultPtr, len);
+
+  mod._free(resultPtr);
+  mod._free(outLenPtr);
+
+  // Parse JSON result
+  return JSON.parse(jsonStr);
 }
